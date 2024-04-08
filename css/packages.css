@@ -1,0 +1,14 @@
+.container-packages{
+    width: 90%;
+    background-color: antiquewhite;
+    display: block;
+    margin: 20px auto;
+}
+.box{
+    width: 90%;
+    background-color: aqua;
+    margin: 10px auto;
+}
+.taj-mahal{
+    width: 100%;
+}
