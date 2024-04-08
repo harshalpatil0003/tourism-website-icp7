@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        .card-btn
+        {
+            background-color: #00DBDE;
+            background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" id="homeLink">Home</a></li>
+            <li><a href="#" id="toursLink">Tours</a></li>
+            <li><a href="#" id="contactLink">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="about-section">
+        <h2>Our Company</h2>
+        <p id="companyInfo">Welcome to our tour company! We specialize in providing memorable and exciting tours to various destinations around the world.</p>
+        <p>Our team is comprised of experienced tour guides who are passionate about travel and committed to ensuring our customers have the best possible experience.</p>
+        <p>Whether you're interested in cultural tours, adventure tours, or luxury vacations, we have something for everyone.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tour Company. All rights reserved.</p>
+    </footer>
+    <script>
+        // Event handling for navigation links
+        document.getElementById('homeLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Redirect to the home page after a delay of 1 second
+            setTimeout(function() {
+                window.location.href = 'index.html';
+            }, 1000);
+        });
+
+        document.getElementById('toursLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Update company info dynamically
+            document.getElementById('companyInfo').textContent = 'Explore our exciting tours and travel experiences!';
+        });
+
+        document.getElementById('contactLink').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Display a message after a delay of 500 milliseconds
+            setTimeout(function() {
+                alert('For inquiries and bookings, please contact us at info@tourcompany.com.');
+            }, 500);
+        });
+    </script>
+
+
+<div class="our-team">
+    <h2>Our Team</h2>
+    
+    <div class="d-flex flex-row mb-3 justify-content-around">
+
+        <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 1
+            <img src="" alt="">
+            <button type="button"  class="btn card-btn" >Read-More</button>
+        </div>
+
+
+        <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 1
+            <img src="" alt="">
+            <button type="button" class="btn card-btn" >Read-More</button>
+        </div>
+
+
+        <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 2
+            <img src="" alt="">
+            <button type="button" class="btn card-btn" >Read-More</button>
+        </div>
+
+
+        <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 3
+            <img src="" alt="">
+                <button type="button" class="btn card-btn"> Read-More</button>
+        </div>
+        
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div id="team-members"></div>
+
+    <script>
+        // Dummy data for team members
+        const teamMembers = [
+            { name: "John Doe", position: "CEO", bio: "John is passionate about travel and has been exploring the world for over 20 years." },
+            { name: "Jane Smith", position: "Marketing Manager", bio: "Jane loves to plan exciting marketing campaigns to promote our travel packages." },
+            { name: "Michael Johnson", position: "Tour Guide", bio: "Michael has extensive knowledge about various destinations and loves sharing it with travelers." }
+        ];
+
+        // Function to display team members
+        function displayTeamMembers() {
+            const teamContainer = document.getElementById("team-members");
+            teamMembers.forEach(member => {
+                const memberDiv = document.createElement("div");
+                memberDiv.classList.add("team-member");
+                memberDiv.innerHTML = `
+                    <h3>${member.name}</h3>
+                    <p><strong>${member.position}</strong></p>
+                    <p>${member.bio}</p>
+                `;
+                teamContainer.appendChild(memberDiv);
+            });
+        }
+
+        // Call the function to display team members
+        
+    </script>
+</div>
+</body>
+</html>
