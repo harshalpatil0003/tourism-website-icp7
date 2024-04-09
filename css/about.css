@@ -125,4 +125,13 @@ background-image: linear-gradient(0deg, #f6bff6 0%, #b3e7ef 100%);
       background-color: #FF0066;
 
   }
-  
+  .empty{
+    background-color:#404040;
+  }
+ .linkedin{
+background-color: #3333ff;
+ }
+ .emptylinkedin
+ {
+  background-color:#404040 ;
+ }
