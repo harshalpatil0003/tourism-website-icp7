@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98.5%;
+  padding: 10px 10px;
+  background: linear-gradient(135deg, #f34079 40%, #fc894d);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(135deg, #f34079 40%, #fc894d);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+.header img {
+  width: 200px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.navbar a {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  
+}
+.nav-div{
+    
+}
+#check {
+  display: none;
+}
+    </style>
 </head>
 <body>
-    
+    <header class="header">
+        <a href="./index.html"> <img src="./png/logo.svg" alt="logo"> </a>
+        <input type="checkbox" id="check" />
+        <label for="check" class="menu-bar">
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <i class="bx bx-x" id="close-icon"></i>
+        </label>
+       
+       <div class="nav-div"> <nav class="navbar">
+          <a href="./index.html">Home</a>
+          <a href="./pages/about.html">About Us</a>
+          <a href="./pages/services.html">Services</a>
+          <a href="./pages/our_packages.html">Our Packages</a>
+          <a href="./pages/venu_page.html">Venue</a>
+          <a href="./pages/testimonials.html">Testimonials</a>
+          <a href="./pages/teaminfo.html">Our team</a>
+          <a href="./pages/contact.html">Contact</a>
+        </nav>
+    </div>
+      </header>
 </body>
 </html>
