@@ -20,14 +20,14 @@ min-height: 100vh;
   }
 
   .stars-container {
-   /display: flex;
+    display: flex;
     justify-content: center;
    
   }
 
   .stars {
     font-size: 20px;
-    color: gold;
+   /* color: gold;*/
     cursor: pointer;
   }
 
