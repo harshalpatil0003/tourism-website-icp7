@@ -9,8 +9,8 @@ body{
 }
 .box{
     width: 90%;
-    background-color: aqua;
-    margin: 10px auto;
+    background-color: white;
+    margin: 20px auto;
     border-radius: 10px;
     line-height: 170%;
 }
@@ -20,7 +20,7 @@ body{
     border-radius: 10px 10px 0 0;
 }
 .package-description{
-    padding: 10px;
+    padding: 20px;
 }
 .package-location{
     text-decoration: none;
