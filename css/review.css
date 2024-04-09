@@ -37,7 +37,7 @@ min-height: 100vh;
   }
 
   /* Responsive adjustments */
-  @media (max-width: 600px) {
+  /*@media (max-width: 600px) {
     .stars {
       font-size: 16px;
     }
@@ -47,4 +47,4 @@ min-height: 100vh;
     h1{
         font-size: 20px;
     }
-  }
+  }*/
