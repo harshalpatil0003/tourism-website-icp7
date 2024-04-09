@@ -82,8 +82,14 @@ img {
     height: 120px;
     width: 120px;
     border-radius: 20px;
+    box-shadow: 0 0 5px 1px #a4a4a4;
 }
-
+.box:hover{
+    transform: scale(1.080);
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 1s;
+}
 .activity-icons {
     display: block;
     height: 100px;
