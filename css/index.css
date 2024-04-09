@@ -161,3 +161,14 @@ img {
 .popular-tours{
     text-align: center;
 }
+.logo{
+    height: 50px;
+}
+.login-img{
+    height: 30px;
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        height: 30px;
+    }
+}
