@@ -76,6 +76,7 @@
       .team-card:hover {
         transform: translateY(-10px);
         transition: .5s;
+        
       }
       .team-img img {
         width: 200px;
@@ -141,4 +142,8 @@ background-color: #3333ff;
  .emptygithub
  {
   background-color:#404040 ;
+ }
+ .cardhover{
+  transform: translateY(-20px);
+  transition: .5s;
  }

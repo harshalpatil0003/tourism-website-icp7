@@ -66,8 +66,7 @@
       document
         .getElementById("homeLink")
         .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default link behavior
-          // Redirect to the home page after a delay of 1 second
+          event.preventDefault(); 
           setTimeout(function () {
             window.location.href = "index.html";
           }, 1000);
@@ -76,8 +75,7 @@
       document
         .getElementById("toursLink")
         .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default link behavior
-          // Update company info dynamically
+          event.preventDefault(); 
           document.getElementById("companyInfo").textContent =
             "Explore our exciting tours and travel experiences!";
         });
@@ -85,8 +83,7 @@
       document
         .getElementById("contactLink")
         .addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent default link behavior
-          // Display a message after a delay of 500 milliseconds
+          event.preventDefault(); 
           setTimeout(function () {
             alert(
               "For inquiries and bookings, please contact us at info@tourcompany.com."
@@ -106,7 +103,7 @@
        <div class="team-cards">
     <div class="team-card">
       <div class="team-img">
-        <img id="img" onclick="change()" src="./../img/about/omkar.jpg" alt="Image not Found" />
+        <img id="img" onclick="change()" ondblclick="dblchange()" src="./../img/about/omkar.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Omkar More</h3>
@@ -116,103 +113,103 @@
           <i id="linkedin" class="bx bxl-linkedin s-icon"  onmouseenter="emptylinkedin()" onmouseleave="linkedincolor()"></a></i>
         <a href="https://github.com/OmkarMore01/tourism-website-icp7">
           <i id="github" class="bx bxl-github s-icon" onmouseenter="emptygithub()" onmouseleave="githubcolor()"></a></i>
-        <p >Designer</p>
+        <p id="para">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img1" onclick="change1()" src="./../img/about/bhakti.jpg" alt="Image not Found" />
+        <img id="img1" onclick="change1()" ondblclick="dblchange1()" src="./../img/about/bhakti.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Bhakti Shinde</h3>
         <a href="#"><i id="instaid1" class="bx bxl-instagram s-icon"  onmouseenter="empty1()" onmouseleave="instacolor1()"></a></i>
         <a href="#"><i id="linkedin1" class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin1()" onmouseleave="linkedincolor1()"></a></i>
         <a href="#"><i id="github1" onmouseenter="emptygithub1()" onmouseleave="githubcolor1()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para1">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img2" onclick="change2()" src="./../img/about/atharva.jpg" alt="Image not Found" />
+        <img id="img2" onclick="change2()" ondblclick="dblchange2()" src="./../img/about/atharva.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Atharva Bhondave</h3>
         <a href="#"><i id="instaid2"  onmouseenter="empty2()" onmouseleave="instacolor2()"class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin2" class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin2()" onmouseleave="linkedincolor2()"></a></i>
         <a href="#"><i id="github2" onmouseenter="emptygithub2()" onmouseleave="githubcolor2()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para2">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img3" onclick="change3()" src="./../img/about/sagar.jpg" alt="Image not Found" />
+        <img id="img3" onclick="change3()" ondblclick="dblchange3()" src="./../img/about/sagar.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Sagar Denge</h3>
         <a href="#"><i id="instaid3"  onmouseenter="empty3()" onmouseleave="instacolor3()"class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin3" class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin3()" onmouseleave="linkedincolor3()"></a></i>
         <a href="#"><i id="github3" onmouseenter="emptygithub3()" onmouseleave="githubcolor3()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para3">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img4" onclick="change4()" src="./../img/about/sanika.jpg" alt="Image not Found" />
+        <img id="img4" onclick="change4()" ondblclick="dblchange4()" src="./../img/about/sanika.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Sanika duvva</h3>
         <a href="#"><i id="instaid4"  onmouseenter="empty4()" onmouseleave="instacolor4()" class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin4"  class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin4()" onmouseleave="linkedincolor4()"></a></i>
         <a href="#"><i id="github4" onmouseenter="emptygithub4()" onmouseleave="githubcolor4()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para4">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img5" onclick="change5()" src="./../img/about/akanksha.jpg" alt="Image not Found" />
+        <img id="img5" onclick="change5()" ondblclick="dblchange5()" src="./../img/about/akanksha.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Akanksha Yewale </h3>
         <a href="#"><i id="instaid5"  onmouseenter="empty5()" onmouseleave="instacolor5()" class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin5"  class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin5()" onmouseleave="linkedincolor5()"></a></i>
         <a href="#"><i id="github5" onmouseenter="emptygithub5()" onmouseleave="githubcolor5()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para5">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img6" onclick="change6()" src="./../img/" alt="Image not Found" />
+        <img id="img6" onclick="change6()" ondblclick="dblchange6()" src="./../img/" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Harshal Patil</h3>
         <a href="#"><i id="instaid6"  onmouseenter="empty6()" onmouseleave="instacolor6()" class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin6"  class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin6()" onmouseleave="linkedincolor6()"></a></i>
         <a href="#"><i id="github6" onmouseenter="emptygithub6()" onmouseleave="githubcolor6()"  class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para6">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img7" onclick="change7()" src="./../img/" alt="Image not Found" />
+        <img id="img7" onclick="change7()" ondblclick="dblchange7()" src="./../img/" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Sharmin Rangrej</h3>
         <a href="#"><i id="instaid7"  onmouseenter="empty7()" onmouseleave="instacolor7()"class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin7"  class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin7()" onmouseleave="linkedincolor7()"></a></i>
         <a href="#"><i id="github7" onmouseenter="emptygithub7()" onmouseleave="githubcolor7()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para7">Designer</p>
       </div>
     </div>
     <div class="team-card">
       <div class="team-img">
-        <img id="img8" onclick="change8()" src="./../img/about/vaishnavi.jpg" alt="Image not Found" />
+        <img id="img8" onclick="change8()" ondblclick="dblchange8()" src="./../img/about/vaishnavi.jpg" alt="Image not Found" />
       </div>
       <div class="team-detail">
         <h3>Vaishnavi Gundgire</h3>
         <a href="#"><i id="instaid8"  onmouseenter="empty8()" onmouseleave="instacolor8()" class="bx bxl-instagram s-icon"></a></i>
         <a href="#"><i id="linkedin8" class="bx bxl-linkedin s-icon" onmouseenter="emptylinkedin8()" onmouseleave="linkedincolor8()"></a></i>
         <a href="#"><i id="github8" onmouseenter="emptygithub8()" onmouseleave="githubcolor8()" class="bx bxl-github s-icon"></a></i>
-        <p>Designer</p>
+        <p id="para8">Designer</p>
       </div>
     </div>
     
@@ -563,6 +560,98 @@
           instaid.classList.add("insta");
         }
         
+        //image javascript change() function
+
+        function change()
+        {
+          const img=document.getElementById("img");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para");
+          para.innerHTML="Hii I Am Full Stack Developer";
+        }
+        function dblchange()
+        {
+          const img=document.getElementById("img");
+          img.src="./../img/about/omkar.jpg";
+          
+          const para=document.getElementById("para");
+          para.innerHTML="Designer";
+        }
+
+        function change1()
+        {
+          const img=document.getElementById("img1");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para1");
+          para.innerHTML="Hii I Am Web-Designer";
+        }
+
+        function change2()
+        {
+          const img=document.getElementById("img2");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para2");
+          para.innerHTML="Hii I Am UI/UX Designer";
+        }
+
+        function change3()
+        {
+          const img=document.getElementById("img3");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para3");
+          para.innerHTML="Hii I Am Shopify Developer";
+        }
+
+        function change4()
+        {
+          const img=document.getElementById("img4");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para4");
+          para.innerHTML="Hii I Am Web Content Manager";
+        }
+
+        function change5()
+        {
+          const img=document.getElementById("img5");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para5");
+          para.innerHTML="Hii I Am Frontend Developer";
+        }
+
+        function change6()
+        {
+          const img=document.getElementById("img6");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para6");
+          para.innerHTML="Hii I Am Web Engineer";
+        }
+
+        function change7()
+        {
+          const img=document.getElementById("img7");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para7");
+          para.innerHTML="Hii I Am E-commerce Developer";
+        }
+
+        function change8()
+        {
+          const img=document.getElementById("img8");
+          img.src="./../img/about/om.jpg";
+          
+          const para=document.getElementById("para8");
+          para.innerHTML="Hii I Am JavaScript Developer";
+        }
+
+
       </script>
     </div>
   </body>
