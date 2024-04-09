@@ -6,6 +6,7 @@ body{
     background-color: antiquewhite;
     display: block;
     margin: 20px auto;
+    padding: 10px;
 }
 .box{
     width: 90%;
@@ -25,4 +26,9 @@ body{
 .package-location{
     text-decoration: none;
     color: black;
+}
+.packages-diffrent-page{
+    display: flex;
+    justify-content: center;
+    
 }
