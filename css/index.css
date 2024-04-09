@@ -66,9 +66,6 @@ img {
     background-color: #717171;
 }
 
-/* Fading animation */
-
-
 @keyframes fade {
     from {
         opacity: .4
@@ -85,63 +82,93 @@ img {
     border-radius: 20px;
     box-shadow: 0 0 5px 1px #a4a4a4;
 }
-.box:hover{
+
+.box:hover {
     transform: scale(1.080);
     box-shadow: 0 0 5px 1px #f87878;
     overflow: hidden;
     transition: 1s;
 }
+
 .activity-icons {
     display: block;
     height: 100px;
     margin: 10px auto;
 }
+
 @media screen and (max-width: 768px) {
     .box {
         height: 80px;
-        width:80px;
+        width: 80px;
         margin-right: 10px;
         margin-top: 10px;
     }
+
     .activity-icons {
         display: block;
         height: 50px;
-        margin:5px auto;
+        margin: 5px auto;
     }
-    
+
 }
-.region-img{
+
+.region-img {
     height: 230px;
     width: 200px;
     margin: 5px;
     border-radius: 20px;
 }
-.region-slogan{
+
+.region-slogan {
     text-align: center;
     margin-bottom: 50px;
 
 }
-.activity-name{
+
+.activity-name {
     text-align: center;
     margin: 5px auto;
     font-size: 15px;
 }
+
 @media screen and (max-width: 768px) {
-    .activity-name{
-   
+    .activity-name {
+
         font-size: 0;
     }
-    .hills{
+
+    .hills {
         font-size: 0;
     }
 }
-.hills
-{
+
+.hills {
     text-align: center;
     margin-top: 25px;
 }
-.box a{
+
+.box a {
     text-decoration: none;
     color: #f87878;
 
+}
+.p-circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.popular-tours{
+    text-align: center;
+}
+.logo{
+    height: 50px;
+}
+.login-img{
+    height: 30px;
+}
+@media screen and (max-width: 768px) {
+    .logo{
+        height: 30px;
+    }
 }
