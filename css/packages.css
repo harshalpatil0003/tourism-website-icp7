@@ -1,3 +1,6 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .container-packages{
     width: 90%;
     background-color: antiquewhite;
@@ -8,7 +11,18 @@
     width: 90%;
     background-color: aqua;
     margin: 10px auto;
+    border-radius: 10px;
+    line-height: 170%;
 }
-.taj-mahal{
+.package-img{
     width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.package-description{
+    padding: 10px;
+}
+.package-location{
+    text-decoration: none;
+    color: black;
 }
