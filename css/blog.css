@@ -1,0 +1,16 @@
+.heading
+{
+ font-weight: bolder;
+}
+.moving-card
+{
+    height:100%;
+    width: 100%;
+   
+}
+.img-text
+{
+    color:rgb(255, 251, 251);
+    font-weight: bolder;
+    font-size: large;
+}
