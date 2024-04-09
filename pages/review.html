@@ -4,38 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>review</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Review Page</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/css/review.css">
 </head>
 <body>
-<div class="container">
-<div class="star">
-    <input type="radio"  name="rate" id="rate-5">
-    <label for="rate-5"  class="fas fa-star" ></label>
-    <input type="radio" name="rate" id="rate-4">
-    <label for="rate-4" class="fas fa-star"></label>
-    <input type="radio" name="rate" id="rate-3">
-    <label for="rate-3" class="fas fa-star"></label>
-    <input type="radio"  name="rate" id="rate-2">
-    <label for="rate-2" class="fas fa-star"></label>
-    <input type="radio"  name="rate" id="rate-1">
-    <label for="rate-1" class="fas fa-star"></label>
-   
-</div>
-<!--<label for="rate-1" class="fas fa-star"></label>-->
-    <form action="#">
-        <header> I Don't Like It</header>
-        <div class="textarea">
-            <textarea  cols="30"placeholder="describe your experience..."></textarea>
-        </div>
-       
-        <div class="btn">
-            <button type="submit">post</button>
-        </div>
-    </form>
 
-</div>
+    <div class="card">
+        <h1>Review Page</h1>
+      
+        <div id="rating" class="stars-container">
+          <div class="stars" data-value="1">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stars" data-value="2">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stars" data-value="3">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stars" data-value="4">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stars" data-value="5">
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      
+        <div class="user-rating">
+          Your Rating: <span id="userStars">0</span> stars
+        </div>
+      </div>
+      
+      <script>
+        
+        const stars = document.querySelectorAll('.stars');
+        const userRating = document.getElementById('userStars');
+      
+        
+        stars.forEach(star => {
+          star.addEventListener('click', function() {
+            const rating = parseInt(this.getAttribute('data-value'));
+            setUserRating(rating);
+          });
+        });
+      
+        
+        function setUserRating(rating) {
+          userRating.textContent = rating;
+          
+          stars.forEach(star => star.style.color = 'gold');
+          
+          for (let i = 0; i < rating; i++) {
+            stars[i].style.color = 'orange';
+          }
+        }
+      </script>
     
 </body>
 </html>
