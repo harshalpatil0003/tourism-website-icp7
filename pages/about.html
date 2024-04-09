@@ -88,6 +88,119 @@
         });
     </script>
     
-    
+    <div class="our-team">
+      <center><h2 class="heading">Our Team</h2></center>
+      <div class="our-team-partition">
+        <div class="d-flex flex-row mb-3 justify-content-around">
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            
+            <img src="./../img/omkar.jpg" class="card-img" alt="" />
+            <p id="first-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+        
+            <img src="./../img/bhakti.jpg" class="card-img2" alt="" />
+            <p id="second-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+           
+            <img src="./../img/atharva.jpg" class="card-img" alt="" />
+            <p id="third-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+          
+            <img src="./../img/sagar.jpg" class="card-img" alt="" />
+            <p id="fourth-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row mb-3 justify-content-around">
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            <img
+              src=""
+              class="card-img"
+              alt="Image not found"
+            />
+            <p id="first-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 6
+            <img src="" alt="" />
+            <p id="second-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 7
+            <img src="" alt="" />
+            <p id="third-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 8
+            <img src="" alt="" />
+            <p id="fourth-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row mb-3" style="margin-left: 125px">
+          <div class="p-2 border border-info p-2 mb-2 border-opacity-50">
+            Flex item 5
+            <img src="" alt="" />
+            <p id="first-card"></p>
+            <button type="button" class="btn card-btn">Know-More</button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Dummy data for team members
+        const teamMembers = [
+          {
+            name: "John Doe",
+            position: "CEO",
+            bio: "John is passionate about travel and has been exploring the world for over 20 years.",
+          },
+          {
+            name: "Jane Smith",
+            position: "Marketing Manager",
+            bio: "Jane loves to plan exciting marketing campaigns to promote our travel packages.",
+          },
+          {
+            name: "Michael Johnson",
+            position: "Tour Guide",
+            bio: "Michael has extensive knowledge about various destinations and loves sharing it with travelers.",
+          },
+        ];
+
+        // Function to display team members
+        function displayTeamMembers() {
+          const teamContainer = document.getElementById("team-members");
+          teamMembers.forEach((member) => {
+            const memberDiv = document.createElement("div");
+            memberDiv.classList.add("team-member");
+            memberDiv.innerHTML = `
+                    <h3>${member.name}</h3>
+                    <p><strong>${member.position}</strong></p>
+                    <p>${member.bio}</p>
+                `;
+            teamContainer.appendChild(memberDiv);
+          });
+        }
+
+        // Call the function to display team members
+      </script>
+    </div>
   </body>
 </html>
