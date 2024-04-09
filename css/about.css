@@ -58,6 +58,7 @@
       .team-cards {
         width: 100%;
         display: flex;
+        padding: 0px;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0px auto;
