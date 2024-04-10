@@ -61,36 +61,7 @@
       </div>
     </div>
 
-    <script>
-      // Event handling for navigation links
-      document
-        .getElementById("homeLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); 
-          setTimeout(function () {
-            window.location.href = "index.html";
-          }, 1000);
-        });
-
-      document
-        .getElementById("toursLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); 
-          document.getElementById("companyInfo").textContent =
-            "Explore our exciting tours and travel experiences!";
-        });
-
-      document
-        .getElementById("contactLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault(); 
-          setTimeout(function () {
-            alert(
-              "For inquiries and bookings, please contact us at info@tourcompany.com."
-            );
-          }, 500);
-        });
-    </script>
+   
     
     
 
