@@ -115,6 +115,7 @@
       @media screen and (max-width: 768px) {
         .team-cards {
           display: flex;
+          
           flex-direction: column;
         }
         .team-card {
