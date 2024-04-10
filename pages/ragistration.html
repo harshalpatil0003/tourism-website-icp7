@@ -149,16 +149,26 @@ body{
 
 <div class="container">
     
-<center>  <u> <h1 class="contact-message" style="color: #2f0468">login</u></h3></center>
-    
+<center>  <u> <h1 class="contact-message" style="color: #2f0468">Registration</u></h3></center>
+    <form action="registration.php" method="post">
         
-        <label for="name">userName or Email address:</label>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">password:</label>
+        <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <input class="btn" type="submit" name="submit" value="login" />
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" required>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input class="btn" type="submit" name="submit" value="Sign-up" />
+        <div class="register">
+            <p>Do have an account-<a href="./login.html">Log In</a></p>
+          </div>
+       
     </form>
 </div>
 
