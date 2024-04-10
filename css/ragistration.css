@@ -28,6 +28,7 @@ body {
     border-radius: 20px 150px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     box-shadow: 0 0 2px 2px black;
+    
 
 }
 
@@ -62,7 +63,7 @@ textarea {
 }
 
 .btn {
-    background-color:#0056b3;
+    background-color: #00dbde;
 
     color: white;
     padding: 10px 20px;
