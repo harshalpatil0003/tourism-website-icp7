@@ -28,8 +28,8 @@
         font-size: 40px;
         padding: 5px;
         margin: 10px auto;
-       
-       
+        border-bottom: 5px solid black;
+       width: 90%;
 
       }
       .heading2{
@@ -41,6 +41,7 @@
         width: 90%;
         margin: 10px auto;
         font-size: 22px;
+       
       }
       .our-team{
         width: 100%;
@@ -119,6 +120,16 @@
         .team-card {
           width: 250px;
           margin: 25px auto;
+        }
+        .who-we-are-section{
+          width: 90%;
+          margin: 10px auto;
+          font-size: 18px;
+          text-align: justify;
+        }
+        .companyInfo
+        {
+          text-align: justify;
         }
       }
       
