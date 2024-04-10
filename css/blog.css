@@ -35,7 +35,8 @@
 .card-img:hover{
 
     transform: scale(1.02);
-    box-shadow: 0 0 5px 1px rgb(44, 24, 173);
+    border: 1px double rgba(154, 35, 138, 0.833);
+    box-shadow: 0 0 5px 1px rgb(55, 53, 52);
     overflow: hidden;
     transition: 1s;
 }
@@ -43,14 +44,14 @@
 
 .card
 {
-      border: 2px solid rgb(44, 24, 173);
+    border: 1px double rgba(154, 35, 138, 0.833);
     background-color: #56ff00;
     background-image: linear-gradient(312deg, #56ff00 0%, #ffffff 46%, #ffd670 100%);
 }
 
 .card:hover{
     transform: scale(1.002);
-    box-shadow: 0 0 5px 1px rgb(44, 24, 173);
+    border: 1px double rgba(154, 35, 138, 0.833);
     overflow: hidden;
     transition: 1s;
   
