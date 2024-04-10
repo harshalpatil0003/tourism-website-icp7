@@ -62,14 +62,19 @@
   </div>
    <!-- blogers -->
    <h4 class="search-blog">Search Blog</h4>
-   <button type="button" ><a >Taj Mahal</a></button>
-   <button type="button">Rishikesh</button>
-   <button type="button"></button>
   
- 
- 
- 
+  
+<!--  chatrapati shivaji maharaj -->
 
+<div class="container">
+  <img   class="container-img"  src="./../img/blog_images/img1.jpg" id="bulb">
+  <p class="text" id="select"><u></u></p>
+  </div>
+  <div class="btn-container">
+    <button type="button" class="btn-toggle " onclick="maharaj('Mena Darwaja')">Mena Darwaja</button>
+    <button type="button"class="btn-toggle " onclick="maharaj('Queens Palace')">Queens Palace</button>
+    <button type="button"class="btn-toggle " onclick="maharaj('Raj Bhavan-Mahajaras house area')">Raj Bhavan</button>
+</div>
 <!-- cards -->
 <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 20px;width: 90%;background-color: white;
 margin: 20px auto;
@@ -113,7 +118,30 @@ line-height: 170%;">
     </div>
   </div>
 
-      
+<!-- javascript -->
+    <script>
+       function maharaj(b)
+        {
+           const select = document.getElementById('bulb');
+           if(b=='mena gate')
+         {
+           select.src = './../img/blog_images/img1.jpg';
+           }
+           else if(b=='Queens Palace')
+          {
+                select.src = './../img/blog_images/img2.jpg';
+            }
+            else if(b=='Queens Palace')
+          {
+               select.src = './../img/blog_images/img3.jpg';
+            }
+        
+            const choice=document.getElementById("select");
+
+choice.innerText=` :\n ${b}`; 
+    }
+    </script>
+
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
