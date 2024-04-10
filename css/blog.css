@@ -108,10 +108,13 @@
 }
   .container-img
   {
-    display: block;
-    margin: auto;
+      display: block;
+      margin: auto;
      height: 400px;
-     width: 100%;
+     width: 101%;
+   padding: 4px;
+   padding-right: 8px;
+     
     
   }
   @media screen and (max-width:768px)
