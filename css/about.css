@@ -1,4 +1,9 @@
 
+.body{
+  background-color: #f5d6f5;
+  background-image: linear-gradient(0deg, #f5d6f5 0%, #d2f1f5 100%);
+
+}
         .companyInfo
         {
             font-size: 22px;
@@ -10,8 +15,12 @@
         
         padding: 5px;
         margin: 1px auto;
-        background-color: #0093E9;
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        
+      /** color:#4B0082 ;
+      color: #800000;
+      color: #8B0000;
+      color: #D2691E;*/
+      color: #00008B;
 
       }
       .heading {
@@ -19,14 +28,14 @@
         font-size: 40px;
         padding: 5px;
         margin: 10px auto;
-        background-color: #0093E9;
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+       
+       
 
       }
       .heading2{
         width: 100%;
-        background-color: #0093E9;
-        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        
+      
       }
       .who-we-are-section{
         width: 90%;
@@ -112,14 +121,7 @@
           margin: 25px auto;
         }
       }
-      .body{
-        background-color: #f5f2f5;
-background-image: linear-gradient(0deg, #f6bff6 0%, #b3e7ef 100%);
-
-        background-size: cover;
-        background-repeat: no-repeat;
-
-      }
+      
       .insta
       {
        
