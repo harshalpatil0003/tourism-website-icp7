@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>East India</title>
+    <style>
+        body {
+            background: rgb(255, 247, 155);
+            background: linear-gradient(0deg, rgba(255, 247, 155, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+
+        }
+
+        #Product {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px #6b666b;
+        
+            display: block;
+        }
+
+        .product-Images-Container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .product-image {
+            height: 60px;
+            object-fit: cover;
+            border: 1px solid #640404;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
 
-<div class="container">
-    <div class="places">
-        <img src="" alt="">
-        <DIV class="">
-            
-        </DIV>
-    </div>
-    <div  class="places"></div>
-    <div  class="places"></div>
-    <div class="places"> </div>
-    <div class="places"> </div>
-    <div class="places"></div>
-    <div class="places"></div>
-</div>
+    <!-- <div class="container">
+
+
+        <div class="places"></div>
+        <div class="places"></div>
+        <div class="places"> </div>
+        <div class="places"> </div>
+        <div class="places"></div>
+        <div class="places"></div>
+
+    </div> -->
+
+
+
+
+
+    <div class="container">
+        <div class="product">
+            <img src="../img/india tours/east/kolkata/KOLKATA.jpg" id="Product" />
+        </div>
+
+        <div class="product-Images-Container">
+            <img src="../img/india tours/east/kolkata/KOLKATA.jpg" class="product-image"
+                onclick="change('../img/india tours/east/kolkata/KOLKATA.jpg')" />
+
+            <img src="../img/india tours/east/kolkata/bridge.jpg" class="product-image"
+                onclick="change('../img/india tours/east/kolkata/bridge.jpg')" />
+
+            <img src="../img/india tours/east/kolkata/t2.jpg" class="product-image"
+                onclick="change('../img/india tours/east/kolkata/t2.jpg')" />
+
+            <img src="../img/india tours/east/kolkata/mahal.jpg"  class="product-image"
+                onclick="change('../img/india tours/east/kolkata/mahal.jpg')" />
+
+            <img src="../img/india tours/east/kolkata/victoria.jpg" class="product-image"
+                onclick="change('../img/india tours/east/kolkata/victoria.jpg')" />
+
+            <img src="../img/india tours/east/kolkata/t1.jpg" class="product-image"
+                onclick="change('../img/india tours/east/kolkata/t1.jpg')" />
+
+        </div>
   
+
+    </div>
+    <script>
+        function change(Name) {
+            const mainImg = document.getElementById('Product');
+            mainImg.src = Name;
+
+        }
+    </script>
+
 </body>
+
 </html>
