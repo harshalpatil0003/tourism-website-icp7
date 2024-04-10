@@ -12,9 +12,11 @@
         }
         .main-heading {
         text-align: center;
-        
-        padding: 5px;
+        font-size: 45px;
+        padding-top: 10px;
         margin: 1px auto;
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
         
       /** color:#4B0082 ;
       color: #800000;
@@ -25,7 +27,7 @@
       }
       .heading {
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         padding: 5px;
         margin: 10px auto;
         border-bottom: 5px solid black;
@@ -132,6 +134,10 @@
         {
           text-align: justify;
           font-size: 18px;
+        }
+        .firstparaspan
+        {
+          display: none;
         }
       }
       
