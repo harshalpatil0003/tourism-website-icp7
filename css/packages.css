@@ -43,3 +43,17 @@ body{
     justify-content: center;
     
 }
+
+/* package description card*/
+
+.package-card-description-img, .package-card-description-containt{
+    width: 100%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    line-height: 170%;
+}
+.package-card-description-img img{
+    width: 100%;
+    cursor: pointer;
+}
