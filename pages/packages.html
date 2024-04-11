@@ -28,7 +28,7 @@
               <img
                 src="../img/packages/taj_mahal.jpg"
                 alt="taj-mahal"
-                class="package-img" />
+                class="package-img"  id="first-card-package"/>
               <div class="package-description">
                 <h2 class="fs-5">Taj Mahal</h2>
                 <a
@@ -38,10 +38,7 @@
                     class="fa-solid fa-location-dot fs-5"
                     style="color: #000000"></i>
                   Uttar Pradesh, India.</a>
-                <p class="text-secondary">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusamus, totam.
-                </p>
+                
                 <i class="fa-solid fa-star fs-5" style="color: #000000"></i><i
                   class="fa-solid fa-star fs-5" style="color: #000000"></i><i
                   class="fa-solid fa-star fs-5" style="color: #000000"></i><i
@@ -59,7 +56,7 @@
               <img
                 src="../img/packages/jammu_kashmir2.jpg"
                 alt="jammu-kashmir"
-                class="package-img" />
+                class="package-img" id="second-card-package"/>
               <div class="package-description">
                 <h2 class="fs-5">Jammu Kashmir</h2>
                 <a
@@ -69,10 +66,7 @@
                     class="fa-solid fa-location-dot fs-5"
                     style="color: #000000"></i>
                   Jammu and Kashmir</a>
-                <p class="text-secondary">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusamus, totam.
-                </p>
+                
                 <i class="fa-solid fa-star fs-5" style="color: #000000"></i><i
                   class="fa-solid fa-star fs-5" style="color: #000000"></i><i
                   class="fa-solid fa-star fs-5" style="color: #000000"></i><i
@@ -90,7 +84,7 @@
               <img
                 src="../img/packages/himachal_pradesh.jpg"
                 alt="taj-mahal"
-                class="package-img" />
+                class="package-img" id="third-card-package"/>
               <div class="package-description">
                 <h2 class="fs-5">Himachal Pradesh</h2>
                 <a
@@ -100,10 +94,7 @@
                     class="fa-solid fa-location-dot fs-5"
                     style="color: #000000"></i>
                   northern part of India</a>
-                <p class="text-secondary">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusamus, totam.
-                </p>
+                
                 <i class="fa-solid fa-star fs-5" style="color: #000000"></i><i
                   class="fa-solid fa-star fs-5" style="color: #000000"></i><i
                   class="fa-regular fa-star fs-5 mb-3"
@@ -120,11 +111,11 @@
         </div>
 
         <div class="packages-diffrent-page">
-          <button type="button" class="btn btn-outline-dark m-2 active">
+          <button type="button" class="btn btn-outline-dark m-2 active" onclick="changePage(2)">
             1
           </button>
-          <button type="button" class="btn btn-outline-dark m-2">2</button>
-          <button type="button" class="btn btn-outline-dark m-2">3</button>
+          <button type="button" class="btn btn-outline-dark m-2" onclick="changePage(2)">2</button>
+          <button type="button" class="btn btn-outline-dark m-2" onclick="changePage(2)">3</button>
         </div>
 
       </div>
@@ -356,6 +347,12 @@
           }
         }
 
+        function changePage(pageNo){
+          let firstCardPackage=document.getElementById("first-card-package");
+          let secondCardPackage=document.getElementById("second-card-package");
+          let thirdCardPackage=document.getElementById("third-card-package");
+          firstCardPackage.src="../img/packages/ldakh.jpg";
+        }
       </script>
     </body>
   </html>
