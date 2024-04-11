@@ -37,13 +37,16 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
     background-color:#FFF;
-    padding: 20px;
-    border-radius: 20px 150px;
+    padding: 50px;
+    border-radius: 20px 50px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     box-shadow: 0 0 2px 2px black;
+    background-color: #8bff45;
+    background-image: linear-gradient(312deg, #8bff45 0%, #ffffff 46%, #ffe396 100%);   
+    
 
 }
 
@@ -92,7 +95,16 @@ textarea {
 .btn:hover {
     background-color: #45a049;
 }
-  
+@media (max-width: 768px) {
+        .container {
+            padding: 10px;
+        }
+    }
+    @media (max-width: 480px) {
+        .container {
+            padding: 5px;
+        }
+    }
 
 
            /*
@@ -149,7 +161,7 @@ body{
 
 <div class="container">
     
-<center>  <u> <h1 class="contact-message" style="color: #2f0468">Registration</u></h3></center>
+<center>  <u> <h1 class="contact-message" style="color: #2f0468">Registration Form</u></h3></center>
     <form action="registration.php" method="post">
         
         <label for="name">Name:</label>
@@ -164,7 +176,28 @@ body{
         <label for="password">password:</label>
         <input type="password" id="password" name="password" required>
 
-        <input class="btn" type="submit" name="submit" value="Sign-up" />
+        <label for="address">Address:</label>
+        <input type="text" id="password" name="address" required>
+
+        <label for="pet">Preferred Spot:</label>
+            <select id="spot" name="spot">
+                <option value="mena darwaja">mena darwaja</option>
+                <option value="queens palace">queens palace</option>
+                <option value="raj bhavan">raj bhavan</option>
+                <option value="Rayagad fort">Rayagad fort</option>
+                <option value="other">Other</option>
+
+                <input class="btn" onclick="register()" type="submit" name="submit" value="register" />
+        <script>
+         function register()
+    {
+        alert("Successfully Register!!")
+    }
+      </script>
+
+        
+           
+
         <div class="register">
             <p>Do have an account-<a href="./login.html">Log In</a></p>
           </div>
