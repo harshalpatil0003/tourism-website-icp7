@@ -46,21 +46,25 @@
 
     </div>
 
-    <div class="container-xxl d-flex flex-row justify-content-between">
-        <button>p</button>
+    <div class="container-xxl d-flex flex-row justify-content-around">
+        <div class="d-flex align-items-center">
+        <img src="../icons/medic/arrow-p.png" class="icons" onclick="revi()" ondblclick="revi3()">
+        </div>
         <div class="d-flex align-items-around bg-primary flex-column p-4 ">
             <h6>200+ SUCCESSFUL TREATMENTS</h6>
             <h3>Explore Our Patients Success Stories</h3>
             <br>
             <img src="../img/medic-img/rev-1.jpg" class=" p-4 rev-img" id="rev-img">
         </div>
-        <div class="container w-50 text-justify p-3">
+        <div class="container w-50 text-justify p-4">
             <img src="../icons/medic/double-quotes.png " class="icons">
             <h3 id="rev-name">Mr Donald from Australia Underwent Colonoscopy and Medical Management</h3><br>
             <hr><br>
-            <p id="rev">Mr. Donald Sams and his wife, from Canberra, Australia, were on a leisure tour across several places. In India, they planned their journey with Tour My India (TMI) and </p>
+            <p id="rev">Mr. Donald Sams and his wife, from Canberra, Australia, were on a leisure tour across several places. In India, they planned their journey with Tour My India (TMI) and wished to visit Himachal Pradesh ; this was their fourth journey planned with TMI. Unfortunately, on the flight to India, Mr. Sams had a rectal bleeding, causing a concern…</p>
         </div>
-        <button onclick="revi()" ondblclick="revi2()">n</button>
+        <div class="d-flex align-items-center">
+        <img src="../icons/medic/arrow-n.png" class="icons" onclick="revi()" ondblclick="revi2()">
+        </div>
     </div>
     
     <script>
@@ -68,7 +72,7 @@
             let a = document.getElementById("rev-img");
             b = document.getElementById("rev-name");
             c = document.getElementById("rev");
-            c.innerText = "Laurie Knight is a 70-year-old Australian, who wished to undergo whole mouth restoration  to be able to eat properly with no pain and to improve the aesthetics. While browsing for the options online, Laurie discovered TMI Medical Tourism . The dental treatments like single or partial implants  are very expensive in Australia, compared to those in India; hence…"
+            c.innerText = "Laurie Knight is a 70-year-old Australian, who wished to undergo whole mouth restoration  to be able to eat properly with no pain and to improve the aesthetics. While browsing for the options online, Laurie discovered TMI Medical Tourism . The dental treatments like single or partial implants  are very expensive in Australia, compared to those in India; hence…";
             b.innerText = "Laurie Knight  from Australia for Complete Mouth Restoration";
             a.src = "../img/medic-img/rev-2.jpg";
         }
@@ -76,9 +80,17 @@
             let a = document.getElementById("rev-img");
             b = document.getElementById("rev-name");
             c = document.getElementById("rev");
-            c.innerText = "Asia Madad, a cardiac patient from Afghanistan, had to undergo mitral valve replacement  for her condition. Asia Madad, her son, daughter, son-in-law and their children had travelled to India from Afghanistan for the surgical procedure in April 2019. They consulted a couple of hospitals in India but were not happy with the consultations. Finally, they reached out for "
-            b.innerText = "Bibi Asia Madad from Afghanistan for Mitral Valve Replacement"
+            c.innerText = "Asia Madad, a cardiac patient from Afghanistan, had to undergo mitral valve replacement  for her condition. Asia Madad, her son, daughter, son-in-law and their children had travelled to India from Afghanistan for the surgical procedure in April 2019. They consulted a couple of hospitals in India but were not happy with the consultations. Finally, they reached out for ";
+            b.innerText = "Bibi Asia Madad from Afghanistan for Mitral Valve Replacement";
             a.src = "../img/medic-img/rev-3.jpg";
+        }
+        function revi3(){
+            let a = document.getElementById("rev-img");
+            b = document.getElementById("rev-name");
+            c = document.getElementById("rev");
+            c.innerText = "Mr. Donald Sams and his wife, from Canberra, Australia, were on a leisure tour across several places. In India, they planned their journey with Tour My India (TMI) and wished to visit Himachal Pradesh ; this was their fourth journey planned with TMI. Unfortunately, on the flight to India, Mr. Sams had a rectal bleeding, causing a concern…";
+            b.innerText = "Mr Donald from Australia Underwent Colonoscopy and Medical Management";
+            a.src = "../img/medic-img/rev-1.jpg";
         }
     </script>
 </body>
