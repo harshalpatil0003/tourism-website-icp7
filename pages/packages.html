@@ -24,7 +24,7 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-4">
-            <div class="box">
+            <div class="box" onclick="description(1)">
               <img
                 src="../img/packages/taj_mahal.jpg"
                 alt="taj-mahal"
@@ -55,7 +55,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="box">
+            <div class="box " onclick="description(2)">
               <img
                 src="../img/packages/jammu_kashmir2.jpg"
                 alt="jammu-kashmir"
@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="box">
+            <div class="box" onclick="description(3)">
               <img
                 src="../img/packages/himachal_pradesh.jpg"
                 alt="taj-mahal"
@@ -134,7 +134,7 @@
       <div class="package-all-detail ">
         <!-- Packages taj start-->
 
-        <div class="package-card-description-taj ">
+        <div class="package-card-description-taj display-property" id="package-card-description-taj">
           <div class="row">
             <h2 class="fs-2">Agra Tourism</h2>
             <div class="col-12 col-lg-6">
@@ -199,7 +199,7 @@
 
         <!-- Packages jammu kashmir start-->
 
-        <div class="package-card-description-kashmir">
+        <div class="package-card-description-kashmir display-property" id="package-card-description-kashmir">
           <div class="row">
             <h2 class="fs-2">Jammu and Kashmir, India</h2>
             <div class="col-12 col-lg-6">
@@ -266,7 +266,7 @@
 
         <!--himachal-->
 
-        <div class="package-card-description-himachal">
+        <div class="package-card-description-himachal display-property" id="package-card-description-himachal">
           <div class="row">
             <h2 class="fs-2">Himachal Pradesh, India</h2>
             <div class="col-12 col-lg-6">
@@ -332,9 +332,12 @@
 
       <!-- Packages End -->
 
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+      <script>
+        function description(naameOfDestination){
+          tajMahalDescription=document.getElementById(package-card-description-taj);
+          
+        }
+
+      </script>
     </body>
   </html>
