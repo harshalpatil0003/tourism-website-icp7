@@ -4,19 +4,24 @@
     background-image: linear-gradient(312deg, #8bff45 0%, #ffffff 46%, #ffe396 100%);    */
     background-color: #f5d6f5;
     background-image: linear-gradient(0deg, #f5d6f5 0%, #e9f7fa 100%);
+    font-family: Verdana, sans-serif;
     
 }
 
 /* sliding images */
 .heading
 {
- font-weight: bolder;
+ font-weight: bold;
  text-align: center;
 }
 
 .moving-img-container
 {
     padding: 40px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    
 }
 @media screen and (max-width:768px)
   {
@@ -32,7 +37,9 @@
 {
     height:100%;
     width: 80%;
-    border: 1px double rgba(154, 35, 138, 0.833);
+    border-radius: 10px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
+
 }
 @media screen and (max-width:768px)
   {
@@ -49,7 +56,7 @@
 }
 .img-text
 {
-    color:rgb(255, 251, 251);
+    color:rgb(7, 0, 0);
     font-weight: bolder;
     font-size: large;
 }
