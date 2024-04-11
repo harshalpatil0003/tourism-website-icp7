@@ -52,7 +52,7 @@
     font-size: large;
 }
 
-
+/* card */
 .card-img 
 {
     background-color:rgb(176, 70, 176);
@@ -79,7 +79,11 @@
     overflow: hidden;
     transition: 1s;
   }
-
+.card-btn
+{
+  border: 1px double rgba(154, 35, 138, 0.833);
+  border-radius: 20px;
+}
 
   /* maharaj */
 
