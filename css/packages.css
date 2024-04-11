@@ -69,6 +69,7 @@ body{
 .visit-places img{
     object-fit: cover;
     width: 100%;
+    height: 250px;
     border-radius: 10px;
 }
 .visit-places img:hover{
@@ -77,4 +78,7 @@ body{
     box-shadow: 0 0 5px 1px #272625;
     overflow: hidden;
     transition: 0.2s;
+}
+.display-property{
+    display: none;
 }
