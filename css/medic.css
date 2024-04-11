@@ -34,3 +34,15 @@
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
  }
+
+ .box-2{
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px #a6c1ee;
+ }
+
+ .hos{
+  height: 100px;
+  mix-blend-mode: multiply;
+
+ }

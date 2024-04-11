@@ -9,14 +9,13 @@
     <style>
         body{
             background-color: #f5d6f5;
-  background-image: linear-gradient(0deg, #f5d6f5 0%, #d2f1f5 100%);
+            background-image: linear-gradient(0deg, #f5d6f5 0%, #d2f1f5 100%);
         }
 
     </style>
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-around" style="margin: 30px auto; 
-   ">
+    <div class="container-fluid d-flex justify-content-around" style="margin: 30px auto; ">
 
         <div class="container d-flex align-items-center">
         <div class="p-3">
@@ -26,7 +25,7 @@
         <div class="d-flex align-items-center column-gap-3">
             <div class="d-flex align-items-center p-2">
             <img src="../icons/medic/m-location.png" class="p-3 h-25 g-col-6">
-            <div class="g-col-6"><b>100+</b><br>Hospitals</div>
+            <div class="g-col-6"><b>100+</b><br>hos p-3pitals</div>
             </div>
             <div class="d-flex align-items-center p-2">
             <img src="../icons/medic/m-help.png" class="p-3 h-25 g-col-6">
@@ -45,18 +44,25 @@
 
     </div>
 
-    <div class="container-fluid d-flex flex-row justify-content-around">
+    <div class="container d-flex justify-content-evenly border border-info-subtle box-2" style="margin: 90px auto; ">
+        <div class="div"><h1>99%</h1>Claim Settlement Ratio</div>
+        <div class="div"><h1>24X7</h1>Customer Support</div>
+        <div class="div"><h1>Min. $50k</h1>Medical Coverage with <span class="d-block">cashless hos p-3pitalisation</span></div>
+        <div class="div"></div>
+    </div>
+
+    <div class="container-fluid d-flex flex-row justify-content-around" style="margin: 150px auto;">
         <div class="d-flex align-items-center">
         <img src="../icons/medic/arrow-p.png" class="icons" onclick="revi()" ondblclick="revi3()">
         </div>
-        <div class="d-flex align-items-around bg-primary flex-column p-4 ">
-            <h6>200+ SUCCESSFUL TREATMENTS</h6>
+        <div class="d-flex align-items-around bg-primary  flex-column p-4 ">
+            <h6><b class="fs-4">➤</b> 200+ SUCCESSFUL TREATMENTS</h6>
             <h3>Explore Our Patients Success Stories</h3>
             <br>
             <img src="../img/medic-img/rev-1.jpg" class=" p-4 rev-img" id="rev-img">
         </div>
         <div class="container w-50 text-justify p-4">
-            <img src="../icons/medic/double-quotes.png " class="icons">
+            <img src="../icons/medic/double-quotes.png " class="icons mb-4">
             <h3 id="rev-name">Mr Donald from Australia Underwent Colonoscopy and Medical Management</h3><br>
             <hr><br>
             <p id="rev">Mr. Donald Sams and his wife, from Canberra, Australia, were on a leisure tour across several places. In India, they planned their journey with Tour My India (TMI) and wished to visit Himachal Pradesh ; this was their fourth journey planned with TMI. Unfortunately, on the flight to India, Mr. Sams had a rectal bleeding, causing a concern…</p>
@@ -65,9 +71,24 @@
         <div class="d-flex align-items-center">
         <img src="../icons/medic/arrow-n.png" class="icons" onclick="revi()" ondblclick="revi2()">
         <br><br><br>
-        <div>
-        
         </div>
+    </div>
+
+    <div class="d-flex container flex-column m-4">
+        <h6>➤ 200+ HOSPITALS</h6>
+        <h1>Our hospital Partners</h1>
+        <div class="d-flex flex-wrap justify-content-evenly p-2">
+            <img src="../img/medic-img/partner-1.jpg" class="hos p-3">
+            <img src="../img/medic-img/partner-2.jpg" class="hos p-3">
+            
+            <img src="../img/medic-img/partner-4.jpg" class="hos p-3">
+            <img src="../img/medic-img/partner-5.jpg" class="hos p-3">
+            
+            <img src="../img/medic-img/partner-7.jpg" class="hos p-3">
+            
+            <img src="../img/medic-img/partner-9.jpg" class="hos p-3">
+            <img src="../img/medic-img/partner-10.jpg" class="hos p-3 ">
+          
         </div>
     </div>
     
@@ -76,7 +97,7 @@
             let a = document.getElementById("rev-img");
             b = document.getElementById("rev-name");
             c = document.getElementById("rev");
-            c.innerText = "Laurie Knight is a 70-year-old Australian, who wished to undergo whole mouth restoration  to be able to eat properly with no pain and to improve the aesthetics. While browsing for the options online, Laurie discovered TMI Medical Tourism . The dental treatments like single or partial implants  are very expensive in Australia, compared to those in India; hence…";
+            c.innerText = "Laurie Knight is a 70-year-old Australian, who wished to undergo whole mouth restoration  to be able to eat properly with no pain and to improve the aesthetics. While browsing for the options online, Laurie discovered TMI Medical Tourism . The dental treatments like single or partial implants  are very expensive in Australia, compared to thos p-3e in India; hence…";
             b.innerText = "Laurie Knight  from Australia for Complete Mouth Restoration";
             a.src = "../img/medic-img/rev-2.jpg";
         }
@@ -84,7 +105,7 @@
             let a = document.getElementById("rev-img");
             b = document.getElementById("rev-name");
             c = document.getElementById("rev");
-            c.innerText = "Asia Madad, a cardiac patient from Afghanistan, had to undergo mitral valve replacement  for her condition. Asia Madad, her son, daughter, son-in-law and their children had travelled to India from Afghanistan for the surgical procedure in April 2019. They consulted a couple of hospitals in India but were not happy with the consultations. Finally, they reached out for ";
+            c.innerText = "Asia Madad, a cardiac patient from Afghanistan, had to undergo mitral valve replacement  for her condition. Asia Madad, her son, daughter, son-in-law and their children had travelled to India from Afghanistan for the surgical procedure in April 2019. They consulted a couple of hos p-3pitals in India but were not happy with the consultations. Finally, they reached out for ";
             b.innerText = "Bibi Asia Madad from Afghanistan for Mitral Valve Replacement";
             a.src = "../img/medic-img/rev-3.jpg";
         }
