@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>West India</title>
+    <style>
+        body {
+            background: rgb(255, 247, 155);
+            background: linear-gradient(0deg, rgba(255, 247, 155, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .product {
+            margin: 10px auto;
+            width: 550px;
+            height: 300px;
+            object-fit: cover;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px #6b666b;
+
+            display: block;
+        }
+
+        .product-Images-Container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .product-image {
+            margin: 2px auto;
+            height: 60px;
+            width: 85px;
+            object-fit: cover;
+            border: 1px solid #640404;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .place {
+            width: 600px;
+            flex-direction: column;
+            margin: 10px auto;
+            box-shadow: 0 0 10px 1px #797979;
+        }
+
+        .information {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container d-flex flex-wrap">
+
+        <div class="place  border border-dark p-2 rounded-2">
+            <h2>Goa</h2>
+            <div>
+                <img src="../img/india tours/west/goa/GOA.jpg" class="product" id="Goa" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/west/goa/GOA.jpg" class="product-image"
+                    onclick="change('../img/india tours/west/goa/GOA.jpg')" />
+
+                <img src="../img/india tours/west/goa/beach.jpg" class="product-image"
+                    onclick="change('../img/india tours/west/goa/beach.jpg')" />
+
+                <img src="../img/india tours/west/goa/brach2.jpg" class="product-image"
+                    onclick="change('../img/india tours/west/goa/brach2.jpg')" />
+
+                <img src="../img/india tours/west/goa/church.jpeg" class="product-image"
+                    onclick="change('../img/india tours/west/goa/church.jpeg')" />
+
+                <img src="../img/india tours/west/goa/road.jpg" class="product-image"
+                    onclick="change('../img/india tours/west/goa/road.jpg')" />
+
+                <img src="../img/india tours/west/goa/ford.jpg" class="product-image"
+                    onclick="change('../img/india tours/west/goa/ford.jpg')" />
+
+            </div>
+
+            <script>
+                function change(Name) {
+                    const goa = document.getElementById('Goa');
+                    goa.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For:</span> Calangute Beach Fort Aguada Cruise in Goa</p>
+            <div class="info">
+                <p class="information">When you think of Goa, you think of sandy beaches, amazing parties, beautiful
+                    little villages, delicious food, and a magical holiday experience. Yes, Goa is rightfully known as
+                    the most popular tourist destination on the West Coast of India, and not just because of its scenic
+                    beaches, but also because of its tropical climate and its rich Portuguese heritage, which you can
+                    still find lingering on in some parts of the town. Nestled in the Konkan Coast Belt, Goa has a
+                    coastline stretching for over a 100 kilometres, and attracts millions of visitors both from within
+                    and outside the country all year round.
+                </p>
+            </div>
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+
+        <div class="place border border-dark p-2 rounded-2">
+            <h2>Udaipur</h2>
+            <div>
+                <img src="../img/india tours/west/udaipur/UDAIPUR.jpg" class="product" id="Udaipur" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/west/udaipur/baned.jpg" class="product-image"
+                    onclick="changes('../img/india tours/west/udaipur/baned.jpg')" />
+
+                <img src="../img/india tours/west/udaipur/boat.jpg" class="product-image"
+                    onclick="changes('../img/india tours/west/udaipur/boat.jpg')" />
+
+                <img src="../img/india tours/west/udaipur/mahal.jpg" class="product-image"
+                    onclick="changes('../img/india tours/west/udaipur/mahal.jpg')" />
+
+                <img src="../img/india tours/west/udaipur/water-villa.jpeg" class="product-image"
+                    onclick="changes('../img/india tours/west/udaipur/water-villa.jpeg')" />
+
+                <img src="../img/india tours/west/udaipur/whitre -fort.jpg" class="product-image"
+                    onclick="changes('../img/india tours/west/udaipur/whitre -fort.jpg')" />
+
+                <img src="../img/india tours/west/udaipur/red-fort.jpg" class="product-image"
+                    onclick="changes('../img/india tours/west/udaipur/red-fort.jpg')" />
+
+            </div>
+
+            <script>
+                function changes(Name) {
+                    const udaipur = document.getElementById('Udaipur');
+                    udaipur.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For: </span>City Palace, Udaipur Lake Pichola Sajjangarh Palace</p>
+            <p>Udaipur, also known as the City of Lakes, is the crown jewel of the state
+                of Rajasthan. It is surrounded by the beautiful Aravalli Hills in all directions, making this city
+                as lovely as it is. This 'Venice of the East' has an abundance of natural beauty, mesmerising
+                temples and breathtaking architecture which makes it a must-visit destination in India. A boat ride
+                through the serene waters of Lake Pichola will be enough to prove to you why Udaipur is the pride of
+                Rajasthan.
+            </p>
+
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+    
+    <div class="place border border-dark p-2 rounded-2">
+        <h2>Jaipur</h2>
+        <div>
+            <img src="../img/india tours/east/Gangtok/GANGTOK.jpg" class="product" id="Jaipur" />
+        </div>
+
+        <div class="product-Images-Container" style="float: left;">
+            <img src="../img/india tours/east/Gangtok/GANGTOK.jpg" class="product-image"
+                onclick="changed('../img/india tours/east/Gangtok/GANGTOK.jpg')" />
+
+            <img src="../img/india tours/east/Gangtok/bridge.jpg" class="product-image"
+                onclick="changed('../img/india tours/east/Gangtok/bridge.jpg')" />
+
+            <img src="../img/india tours/east/Gangtok/lake.jpg" class="product-image"
+                onclick="changed('../img/india tours/east/Gangtok/lake.jpg')" />
+
+            <img src="../img/india tours/east/Gangtok/manarchy.jpg" class="product-image"
+                onclick="changed('../img/india tours/east/Gangtok/manarchy.jpg')" />
+
+            <img src="../img/india tours/east/Gangtok/mountain.jpg" class="product-image"
+                onclick="changed('../img/india tours/east/Gangtok/mountain.jpg')" />
+
+            <img src="../img/india tours/east/Gangtok/temples.jpg" class="product-image"
+                onclick="changed('../img/india tours/east/Gangtok/temples.jpg')" />
+
+        </div>
+
+        <script>
+            function changed(Name) {
+                const jaipur = document.getElementById('Jaipur');
+                jaipur.src = Name;
+
+            }
+        </script>
+        <p><span style="font-weight: 700;">Known For:</span>Amer Fort Jantar Mantar Jaipur Hawa Mahal</p>
+        <div class="info">
+            <p class="information">Jaipur, the capital city of Rajasthan, stands as a jewel in the crown of the Golden
+                Triangle, alongside Delhi and Agra. This enchanting city, often referred to as the "Pink City," owes its
+                nickname to the terracotta-pink hue that adorns many of its buildings. The Pink City is a testament to
+                the royal heritage of Rajasthan, known for its magnificent palaces, vibrant bazaars, and imposing forts.
+            </p>
+        </div>
+        <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+            Now</button>
+    </div>
+
+
+    <div class="place border border-dark p-2 rounded-2">
+        <h2>Darjeeling</h2>
+        <div>
+            <img src="../img/india tours/east/Darjeeling/DARJEELING.jpg" class="product" id="Darjeeling" />
+        </div>
+
+        <div class="product-Images-Container" style="float: left;">
+            <img src="../img/india tours/east/Darjeeling/DARJEELING.jpg" class="product-image"
+                onclick="chang('../img/india tours/east/Darjeeling/DARJEELING.jpg')" />
+
+            <img src="../img/india tours/east/Darjeeling/farms.jpg" class="product-image"
+                onclick="chang('../img/india tours/east/Darjeeling/farms.jpg')" />
+
+            <img src="../img/india tours/east/Darjeeling/ice park.jpg" class="product-image"
+                onclick="chang('../img/india tours/east/Darjeeling/ice park.jpg')" />
+
+            <img src="../img/india tours/east/Darjeeling/lake.jpg" class="product-image"
+                onclick="chang('../img/india tours/east/Darjeeling/lake.jpg')" />
+
+            <img src="../img/india tours/east/Darjeeling/mounts.jpg" class="product-image"
+                onclick="chang('../img/india tours/east/Darjeeling/mounts.jpg')" />
+
+            <img src="../img/india tours/east/Darjeeling/park.jpeg" class="product-image"
+                onclick="chang('../img/india tours/east/Darjeeling/park.jpeg')" />
+
+        </div>
+
+        <script>
+            function chang(Name) {
+                const darjeeling = document.getElementById('Darjeeling');
+                darjeeling.src = Name;
+
+            }
+        </script>
+        <p><span style="font-weight: 700;">Known For:</span> Darjeeling Himalayan Railway Tiger Hill Batasia
+            Loop
+        </p>
+        <div class="info">
+            <p class="information">Jaw-dropping locales, mesmerising sunrises, the untouched beauty of the hills,
+                the old-world charm of the past, and the welcoming smiles of the local people all add up to make
+                Darjeeling one of the most beautiful hill stations in Eastern part of India. Spread over a steep
+                mountain ridge, nestled amidst acres of lush green tea plantations, Darjeeling stands at the height
+                of 2,050 meters above sea level, thus boasting of cool climes all year round. This scenic hill
+                station is the perfect getaway for a romantic honeymoon and is just around 700 kilometres away from
+                Kolkata.
+            </p>
+        </div>
+        <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+            Now</button>
+    </div>
+
+    <div class="place border border-dark p-2 rounded-2">
+        <h2>Majuli</h2>
+        <div>
+            <img src="../img/india tours/east/Majuli/MAJULI.jpg" class="product" id="Majuli" />
+        </div>
+
+        <div class="product-Images-Container" style="float: left;">
+            <img src="../img/india tours/east/Majuli/MAJULI.jpg" class="product-image"
+                onclick="changl('../img/india tours/east/Majuli/MAJULI.jpg')" />
+
+            <img src="../img/india tours/east/Majuli/lake.jpg" class="product-image"
+                onclick="changl('../img/india tours/east/Majuli/lake.jpg')" />
+
+            <img src="../img/india tours/east/Majuli/animals.jpg" class="product-image"
+                onclick="changl('../img/india tours/east/Majuli/animals.jpg')" />
+
+            <img src="../img/india tours/east/Majuli/mist.jpg" class="product-image"
+                onclick="changl('../img/india tours/east/Majuli/mist.jpg')" />
+
+            <img src="../img/india tours/east/Majuli/road.jpg" class="product-image"
+                onclick="changl('../img/india tours/east/Majuli/road.jpg')" />
+
+            <img src="../img/india tours/east/Majuli/sunset.jpg" class="product-image"
+                onclick="changl('../img/india tours/east/Majuli/sunset.jpg')" />
+
+        </div>
+
+        <script>
+            function changl(Name) {
+                const majuli = document.getElementById('Majuli');
+                majuli.src = Name;
+
+            }
+        </script>
+        <p><span style="font-weight: 700;">Known For:</span> Kamalabari Satra Dakhinpat Satra Garmur </p>
+        <div class="info">
+            <p class="information">Majuli, the world's largest river island located in the Brahmaputra, is just 20
+                km from Jorhat and 347 km from Guwahati. Recognized as one of India's most surreal places and a
+                contender for UNESCO's World Heritage Sites, this island is the cultural capital of Assam, inhabited
+                mostly by tribals and renowned for its unique festivities, especially the vibrant Raas festival.
+                This pristine, pollution-free destination attracts global tourists with its rich tribal culture and
+                lush green landscapes.
+            </p>
+        </div>
+        <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+            Now</button>
+    </div>
+
+
+    <div class="place border border-dark p-2 rounded-2">
+        <h2>Tawang
+        </h2>
+        <div>
+            <img src="../img/india tours/east/tawang/TAWANG.jpg" class="product" id="Tawang" />
+        </div>
+
+        <div class="product-Images-Container" style="float: left;">
+            <img src="../img/india tours/east/tawang/TAWANG.jpg" class="product-image"
+                onclick="changg('../img/india tours/east/tawang/TAWANG.jpg')" />
+
+            <img src="../img/india tours/east/tawang/house.jpg" class="product-image"
+                onclick="changg('../img/india tours/east/tawang/house.jpg')" />
+
+            <img src="../img/india tours/east/tawang/iceroad.jpg" class="product-image"
+                onclick="changg('../img/india tours/east/tawang/iceroad.jpg')" />
+
+            <img src="../img/india tours/east/tawang/manarchy.jpg" class="product-image"
+                onclick="changg('../img/india tours/east/tawang/manarchy.jpg')" />
+
+            <img src="../img/india tours/east/tawang/mist.jpg" class="product-image"
+                onclick="changg('../img/india tours/east/tawang/mist.jpg')" />
+
+            <img src="../img/india tours/east/tawang/mounts.jpg" class="product-image"
+                onclick="changg('../img/india tours/east/tawang/mounts.jpg')" />
+
+        </div>
+
+        <script>
+            function changg(Name) {
+                const tawang = document.getElementById('Tawang');
+                tawang.src = Name;
+
+            }
+        </script>
+        <p><span style="font-weight: 700;">Known For:</span> Sela Pass Tawang Monastery Madhuri Lake</p>
+        <div class="info">
+            <p class="information">Tawang, nestled in the northeastern state of Arunachal Pradesh, is renowned for
+                its magnificent Tawang Monastery, the largest Buddhist monastery in India. Surrounded by the
+                snow-capped peaks of the Eastern Himalayas, the region offers breathtaking landscapes and is steeped
+                in rich Tibetan culture. Beyond its spiritual significance, Tawang is a haven for nature
+                enthusiasts, with its pristine lakes, alpine meadows, and diverse flora and fauna.
+            </p>
+        </div>
+        <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+            Now</button>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
