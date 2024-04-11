@@ -45,7 +45,12 @@ body{
 }
 
 /* package description card*/
-
+#packages-detail-description{
+    width: 95%;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+}
 .package-card-description-img, .package-card-description-containt{
     width: 100%;
     overflow:auto;
@@ -57,4 +62,19 @@ body{
     width: 100%;
     cursor: pointer;
     border-radius: 10px;
+}
+.visit-places{
+    width: 100%;
+}
+.visit-places img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+.visit-places img:hover{
+    transform: scale(1);
+    border: 1px double #000000d4;
+    box-shadow: 0 0 5px 1px #272625;
+    overflow: hidden;
+    transition: 0.2s;
 }
