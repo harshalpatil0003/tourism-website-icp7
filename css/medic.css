@@ -13,3 +13,24 @@
 .icons{
   height: 80px;
 }
+
+.butto{
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+.but:hover{
+  background-position: right center;
+}
+.but{
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  width: 130px;
+  border: none;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
