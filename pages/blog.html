@@ -9,28 +9,30 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="./../css/blog.css">
-
-<body>
+    <style>
+       /* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Pacifico&display=swap'); */
+    </style>
+<body class="body">
     <marquee><h1>Namaste Trail</h1></marquee>
     <h2 class="heading">Our Latest Informative Travel Blogs</h2>
 <!-- moving img -->
 
-<div id="carouselExampleDark" class="carousel carousel-dark slide moving-card">
-    <div class="carousel-indicators">
+<div id="carouselExampleDark" class="carousel carousel-dark slide moving-img-container">
+    <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner  moving-card">
+    <div class="carousel-inner  ">
       <div class="carousel-item active px-5" data-bs-interval="10000">
-        <img src="./../img/blog_images/blog_img1.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+        <img src="./../img/blog_images/blog_img1.jpg" class="d-block w-100 moving-img" alt="..." style="width: 100%;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="">Best River Rafting in Rishikesh</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item px-5" data-bs-interval="2000">
-        <img src="./../img/blog_images/blog_img2.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+        <img src="./../img/blog_images/blog_img2.jpg" class="d-block w-100 moving-img" alt="..." style="width: 100%;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="img-text">
           </h5>
@@ -38,7 +40,7 @@
         </div>
       </div>
       <div class="carousel-item px-5">
-        <img src="./../img/blog_images/blog_img3.jpg" class="d-block w-100 " alt="..." style="height: 400px;">
+        <img src="./../img/blog_images/blog_img3.jpg" class="d-block w-100 moving-img" alt="..." style="width: 100%;">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="img-text">May 31, 2022</h5>
           <p class="img-text">
@@ -60,43 +62,93 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+   <!-- blogers -->
+  <br><br>
   
-
+  
+<!-- chatrapati shivaji maharaj-->
+<h4 style="text-align: center;">Monsoon trip to Raigad Fort  King of Forts(Blog)</h4>
+<div class="container">
+  <img   class="container-img"  src="./../img/blog_images/img1.jpg" id="bulb">
+  <p class="text" id="select"><b>7th Sept 2023:</b> Trip to Raigad (Total Distance traveled: 160 km):
+  The starting point of our tour was the Mena Darwaja the entrance through which the royal ladies of the Fort would enter. 
+  It is the southern entry to the castle. After entering the fort from the Mena Darwaja, we saw Rani Wada (Queens Palace) on our left.
+  There are six spacious houses for 6 queens of Maharaja. <u></u></p><br>
+  </div>
+  <div class="btn-container">
+    <button type="button" class="btn-toggle " onclick="maharaj('The starting point of our tour was the Mena Darwaja  the entrance through which the royal ladies of the Fort would enter. It is the southern entry to the castle. After entering the fort from the Mena Darwaja, we saw Rani Wada (Queens Palace) on our left.  There are six spacious houses for 6 queens of Maharaja.')">Mena Darwaja</button>
+    <button type="button"class="btn-toggle " onclick="maharaj('After entering the fort from the Mena Darwaja we saw Rani Wada Queens Palace on our left There are six spacious houses for 6 queens of Maharaja Shivaji Maharaj had 8 Queens 6 Queens stayed on Raigad fort whereas one at base village Pachad along with Jijabai Mother of Shivaji Maharaj and 1st queen Saibai died on Rajgad before Raigad was built')">Queens Palace</button>
+    <button type="button"class="btn-toggle " onclick="maharaj('Raj Bhavan-Mahajaras house area We saw some ruined house like structures opposite to first queen palace Some people say those were Prison cells whereas some say those were houses of royal warrior There are 3-grain storage rooms on the right after entering from Mena Darwaja. We saw the Palkhi Darwaja before we moved into Raj Bhavan')">Raj Bhavan</button>
+</div>
 
 
 <!-- cards -->
-    <div class="card-group img p-5">
-        <div class="card pl-3">
-          <img src="./../img/blog_images/blog_img6.jpg" class="card-img-top img" alt="...">
-          <div class="card-body ">
-            <h5 class="card-title">October 13,2022</h5>
-            <p class="card-text">
-                Explore the Hidden Natural Treasure of Himalayas with These Unexplored Treks in Uttarakhand</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 20px;width: 90%;background-color: white;
+margin: 20px auto;
+border-radius: 10px;
+line-height: 170%;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./../img/blog_images/blog_img6.jpg" class="card-img-top card-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">October 13,2022</h5>
+          <p class="card-text card-text-size">Explore the Hidden Natural Treasure of Himalayas with These Unexplored Treks in Uttarakhand</p>
         </div>
-        <div class="card">
-          <img src="./../img/blog_images/blog_img7.jpg" class="card-img-top img" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">October 8,2022</h5>
-            <p class="card-text">
-                Where to Visit in Uttarakhand and Himachal For Adventure, Chilling, and Finding Peace for a Post-Lockdown Holiday?</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./../img/blog_images/blog_img8.jpg" class="card-img-top img" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">October 7,2020
-            </h5>
-            <p class="card-text">
-                Exotic Animals Found Exclusively In The Himalayas</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
         </div>
       </div>
-      
-      
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./../img/blog_images/blog_img7.jpg" class="card-img-top card-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">October 8,2022</h5>
+          <p class="card-text card-text-size">  Exotic Animals Found Exclusively In The Himalayas</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./../img/blog_images/blog_img8.jpg" class="card-img-top card-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">October 7,2020</h5>
+          <p class="card-text card-text-size">  Exotic Animals Found Exclusively In The Himalayas</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- javascript -->
+    <script>
+       function maharaj(b)
+        {
+           const select = document.getElementById('bulb');
+           if(b=='The starting point of our tour was the Mena Darwaja  the entrance through which the royal ladies of the Fort would enter. It is the southern entry to the castle. After entering the fort from the Mena Darwaja, we saw Rani Wada (Queens Palace) on our left.  There are six spacious houses for 6 queens of Maharaja.')
+           {
+           select.src = './../img/blog_images/img1.jpg';
+           }
+           else if(b=='After entering the fort from the Mena Darwaja we saw Rani Wada Queens Palace on our left There are six spacious houses for 6 queens of Maharaja Shivaji Maharaj had 8 Queens 6 Queens stayed on Raigad fort whereas one at base village Pachad along with Jijabai Mother of Shivaji Maharaj and 1st queen Saibai died on Rajgad before Raigad was built')
+            {
+                select.src = './../img/blog_images/img2.jpg';
+            }
+            else if(b=='Raj Bhavan-Mahajaras house area We saw some ruined house like structures opposite to first queen palace Some people say those were Prison cells whereas some say those were houses of royal warrior There are 3-grain storage rooms on the right after entering from Mena Darwaja. We saw the Palkhi Darwaja before we moved into Raj Bhavan')
+          {
+               select.src = './../img/blog_images/img3.jpg';
+            }
+        
+            const choice=document.getElementById("select");
+
+choice.innerText=`Monday 8 September 2023:-\n ${b}`; 
+    }
+    </script>
+
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
