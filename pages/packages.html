@@ -334,8 +334,26 @@
 
       <script>
         function description(naameOfDestination){
-          tajMahalDescription=document.getElementById(package-card-description-taj);
-          
+          let tajMahalDescription=document.getElementById("package-card-description-taj");
+          let kashmirDescription=document.getElementById("package-card-description-kashmir");
+          let himachalDescription=document.getElementById("package-card-description-himachal")
+          tajMahalDescription.classList.remove("display-property");
+
+          if(naameOfDestination==1){
+            tajMahalDescription.classList.remove("display-property");
+            kashmirDescription.classList.add("display-property");
+            himachalDescription.classList.add("display-property");
+          }
+          else if(naameOfDestination==2){
+            tajMahalDescription.classList.add("display-property");
+            kashmirDescription.classList.remove("display-property");
+            himachalDescription.classList.add("display-property");
+          }
+          else if(naameOfDestination==3){
+            tajMahalDescription.classList.add("display-property");
+            kashmirDescription.classList.add("display-property");
+            himachalDescription.classList.remove("display-property");
+          }
         }
 
       </script>
