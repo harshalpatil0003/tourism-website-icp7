@@ -2,6 +2,12 @@
     background-color: #f5d6f5;
   background-image: linear-gradient(0deg, #f5d6f5 0%, #e9f7fa 100%);
 }
+.minh{
+  color: rgb(255, 210, 126);
+}
+.h{
+  color: #f87878;
+}
 
 .centre{
   margin: 150px auto;
@@ -10,18 +16,25 @@
   border-radius: 50%;
   height: 500px;
   width: 500px;
-  border: solid white 20px;
+  border: solid rgb(255, 210, 126) 20px;
 }
 
 .icons{
   height: 80px;
 }
 
-.butto{
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+.icns:hover{
+  transform: scale(1.080);
+  overflow: hidden;
+  transition: 1s;
 }
+
 .but:hover{
-  background-position: right center;
+  transform: scale(1.080);
+    box-shadow: 0 0 5px 1px #f87878;
+    color: #f87878;
+    overflow: hidden;
+    transition: 1s;
 }
 .but{
   flex: 1 1 auto;
@@ -31,21 +44,41 @@
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: rgb(255, 210, 126);
   width: 130px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 1px #a4a4a4;
   border: none;
-  box-shadow: 0 0 20px #eee;
   border-radius: 10px;
  }
-
+ .box-1{
+  color: white;
+  background-color: #f87878;
+ }
  .box-2{
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 5px #a6c1ee;
+  box-shadow: 0 0 5px 1px #a4a4a4;
  }
+.box-2:hover{
+  transform: scale(1.080);
+  box-shadow: 0 0 5px 1px #f87878;
+  color: #f87878;
+  overflow: hidden;
+  transition: 1s;
+}
 
  .hos{
   height: 100%;
   width: 100%;
+ }
 
+ .doc-img{
+    height: 200px;
+    width: 350px;
+ }
+ .doc-img:hover{
+  transform: scale(1.080);
+  overflow: hidden;
+    transition: 1s;
  }
