@@ -29,6 +29,17 @@
   transition: 1s;
 }
 
+.np{
+  height: 80px;
+  border-radius: 50%;
+}
+.np:hover{
+  transform: scale(1.080);
+  box-shadow: 0 0 5px 1px grey;
+  overflow: hidden;
+  transition: 1s;
+}
+
 .but:hover{
   transform: scale(1.080);
     box-shadow: 0 0 5px 1px #f87878;
@@ -93,4 +104,8 @@
   color: rgb(255, 210, 126);
   overflow: hidden;
   transition: 1s;
+ }
+
+ @media screen and (max-width: 1200px){
+
  }
