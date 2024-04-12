@@ -82,3 +82,15 @@
   overflow: hidden;
     transition: 1s;
  }
+ .box-3{
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px #a4a4a4;
+ }
+ .box-3:hover{
+  transform: scale(1.080);
+  box-shadow: 0 0 5px 1px #f87878;
+  color: rgb(255, 210, 126);
+  overflow: hidden;
+  transition: 1s;
+ }
