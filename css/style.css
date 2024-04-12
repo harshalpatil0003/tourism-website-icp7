@@ -3,15 +3,21 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.btn{
+ border: none;
+}
 
 .nav-link {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
 
 
 .nav-link:hover {
-    color: rgb(255, 210, 126);
+    color:orange;
+    border: 1px solid #ffab19;
+    border-radius: 10px;
 }
 
 .logo {
