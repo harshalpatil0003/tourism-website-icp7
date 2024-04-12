@@ -24,9 +24,53 @@ img {
     margin-bottom: 20px;
 }
 
+
 @media screen and (max-width: 768px) {
     img {
         height: 100%;
         width: 100%;
     }
+    .centered{
+        display: none;
+    }
 }
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-10%,-10%);
+
+    
+}
+
+ /* search bar section */
+ .search-bar {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+/* Custom styles for form elements */
+.search-bar input[type="text"],
+.search-bar input[type="date"],
+.search-bar input[type="number"] {
+    border-radius: 30px; 
+    padding: 10px 20px; 
+}
+
+.search-bar input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.search-bar .btn {
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+

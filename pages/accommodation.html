@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link  rel="stylesheet" href="/css/accommodation.css"  />
+    <link  rel="stylesheet" href="./../css/accommodation.css">
     <title>Accommodation And Dining</title>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container text-center">
-            <h1>Discover Your Perfect Getaway</h1>
-            <h5>Explore a world of luxury accommodations and exquisite dining experiences with Namaste Trail.</h5>
-            <a href="#featured-listings" class="btn btn-primary btn-lg">Explore Now</a>
-        </div>
-    </section>
-
 <!--  Featured Listings -->
-    <div class="slideshow-container">
+    <div class="slideshow-container container">
+
+        <!-- Hero Section -->
+
+        <div class="text-center centered">
+            <h1>Discover Your Perfect Getaway</h1>
+            <h3>Explore a world of luxury accommodations and exquisite dining experiences with Namaste Trail.</h3>
+        </div>
+    
 
         <div class="mySlides ">
             <img src="./../img/accommodation/hotel-img-1.jpg">
@@ -70,6 +69,96 @@
             setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
     </script>
+
+
+ <!-- Search Bar Section -->
+ <section class="search-bar">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Location">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="date" class="form-control" id="checkin" placeholder="Check-in Date">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="date" class="form-control" id="checkout" placeholder="Check-out Date">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Guests">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-1">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        <!-- Date and time display -->
+        <div class="date-time" id="date-time"></div>
+    </div>
+</section>
+
+<script>
+    // Function to update the current date and time
+    function updateDateTime() {
+        // Get the current date and time
+        let now = new Date();
+
+        // Format date in YYYY-MM-DD format
+        let year = now.getFullYear();
+        let month = String(now.getMonth() + 1).padStart(2, '0');
+        let day = String(now.getDate()).padStart(2, '0');
+        let currentDate = year + '-' + month + '-' + day;
+
+        // Format time in HH:MM format
+        let hours = String(now.getHours()).padStart(2, '0');
+        let minutes = String(now.getMinutes()).padStart(2, '0');
+        let currentTime = hours + ':' + minutes;
+
+        // Update the input fields with current date and time
+        document.getElementById('checkin').value = currentDate;
+        document.getElementById('checkout').value = currentDate;
+
+        // Update the date and time display element
+        document.getElementById('date-time').innerHTML = 'Current Date and Time: ' + currentDate + ' ' + currentTime;
+    }
+
+    // Call the function initially to set the current date and time
+    updateDateTime();
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+</script>
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
