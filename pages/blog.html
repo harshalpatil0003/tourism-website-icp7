@@ -12,11 +12,14 @@
     <style>
        /* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Pacifico&display=swap'); */
     </style>
+
+
 <body class="body">
-    <marquee><h1>Namaste Trail</h1></marquee>
+    <!-- <marquee><h1>Namaste Trail</h1></marquee> -->
+    <br>
     <h2 class="heading">Our Latest Informative Travel Blogs</h2>
 <!-- moving img -->
-
+<!-- 
 <div id="carouselExampleDark" class="carousel carousel-dark slide moving-img-container">
     <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,9 +64,33 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
    <!-- blogers -->
-  <br><br>
+
+   <div id="carouselExampleSlidesOnly" class="carousel slide moving-card moving-img-container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1300" id="bulb2">
+        <img src="./../img/blog_images/blog_img1 (2).jpg" class="d-block w-100 moving-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="img-text">May 31, 2022</h5>
+          <p class="img-text">
+
+            14 Things to Do in Rishikesh
+            <br>
+            CM Content Team
+            <br>
+            Updated on : 02 February, 2024, 16:48 pm</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1400" id="bulb2">
+        <img src="./../img/blog_images/blog_img2 (3).jpg" class="d-block w-100 moving-img" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="1500" id="bulb2">
+        <img src="./../img/blog_images/blog_img3 (2).jpg" class="d-block w-100 moving-img" alt="...">
+      </div>
+    </div>
+  </div>
+  
   
   
 <!-- chatrapati shivaji maharaj-->
@@ -74,6 +101,7 @@
   The starting point of our tour was the Mena Darwaja the entrance through which the royal ladies of the Fort would enter. 
   It is the southern entry to the castle. After entering the fort from the Mena Darwaja, we saw Rani Wada (Queens Palace) on our left.
   There are six spacious houses for 6 queens of Maharaja. <u></u></p><br>
+  <h6 style="text-align: center;">july 13, 2023&nbsp;<span><img src="./../img/blog_images/profile-user.png" style="height: 17px;"></span> <b>Bhakti Shinde </b>Monsoon trip to Raigad Fort  King of Forts</h6>
   </div>
   <div class="btn-container">
     <button type="button" class="btn-toggle " onclick="maharaj('The starting point of our tour was the Mena Darwaja  the entrance through which the royal ladies of the Fort would enter. It is the southern entry to the castle. After entering the fort from the Mena Darwaja, we saw Rani Wada (Queens Palace) on our left.  There are six spacious houses for 6 queens of Maharaja.')">Mena Darwaja</button>
@@ -89,17 +117,17 @@
 <h4 style="text-align: center;">Helpful Guidelines for Char Dham Yatra</h4>
 <div class="container">
   <img   class="container-img"  src="./../img/blog_images/dham3_kedarnath.jpg" id="bulb2">
-  <p class="text" id="select"><b>10th April 2024:</b> Trip to Raigad (Total Distance traveled: 160 km):
-  The starting point of our tour was the Mena Darwaja the entrance through which the royal ladies of the Fort would enter. 
-  It is the southern entry to the castle. After entering the fort from the Mena Darwaja, we saw Rani Wada (Queens Palace) on our left.
-  There are six spacious houses for 6 queens of Maharaja. <u></u></p><br>
-  <h6 style="text-align: center;">May 16, 2023&nbsp;<span><img src="./../img/blog_images/profile-user.png" style="height: 17px;"></span> <b>Suraj Chand Badrinath</b>, Chardham Yatra, Kedarnath, Yamunotri</h6>
+  <p class="text" id="select1"><b>May 16, 2023:</b> by Suraj Chand :<br>
+    A journey of four holy rivers of India, namely Ganga, Yamuna, Mandakini, and Alaknanda, is an experience you don’t want to miss. 
+    It is a trip, taking you to the four prominent holy destinations and is an unforgettable experience for all the devotees. 
+    Chota Char Dham is a spiritual tour of four pilgrimage sites in India, namely Yamunotri, Gangotri, Kedarnath, and Badrinath, all present in Uttarakhand.<u></u></p><br>
+  <h6 style="text-align: center;">May 16, 2023&nbsp;<span><img src="./../img/blog_images/profile-user.png" style="height: 17px;"></span> <b>Suraj Chand </b>Badrinath, Chardham Yatra, Kedarnath, Yamunotri</h6>
   </div>
   <div class="btn-container">
-    <button type="button" class="btn-toggle " onclick="fourdham('It will probably begin from Barkot. You will drive up to the Yamunotri Dham which will be followed by a 7 km trek. Or you could also visit Uttarkashi, which is just about 100 km from the Gangotri Dham')">Yamunotri</button>
-    <button type="button"class="btn-toggle " onclick="fourdham('Located in the Uttarkashi district of Uttarakhand, this is one of the four sites which make up the Chota Char Dham. The shrine is very special to the Hindus because of its incomparable beauty')">Gangotri </button>
-    <button type="button"class="btn-toggle " onclick="fourdham('In this ancient temple, we find inscriptions written in Pali. The present temple was built by Adi Shankaracharya Ji. On the inner walls of the temple, there are sculptures of various deities and scenes from mythology')">Kedarnath</button>
-    <button type="button"class="btn-toggle " onclick="fourdham('Then on to Rudraprayag which is just 160 km away from Badrinath Dham, the final Dham in your Yatra')">Badrinath</button>
+    <button type="button" class="btn-toggle " onclick="fourdham('It will probably begin from Barkot. You will drive up to the Yamunotri Dham which will be followed by a 7 km trek. Or you could also visit Uttarkashi, which is just about 100 km from the Gangotri Dham Yamuna, the second most sacred river in India, originates from Yamunotri. The Yamunotri temple is believed to be constructed by the king of Tehri, Naresh Sudarshan Shah in 1839')">Yamunotri</button>
+    <button type="button"class="btn-toggle " onclick="fourdham('Located in the Uttarkashi district of Uttarakhand, this is one of the four sites which make up the Chota Char Dham. The shrine is very special to the Hindus because of its incomparable beauty  Another key factor is that legends believe that this place is the origin of the river Ganga after it descended from heaven')">Gangotri </button>
+    <button type="button"class="btn-toggle " onclick="fourdham('In this ancient temple, we find inscriptions written in Pali. The present temple was built by Adi Shankaracharya Ji. On the inner walls of the temple, there are sculptures of various deities and scenes from mythology  On the outside of the temple, there is a large statue of the Nandi Bull. The temple is set amidst the mountains of the Garhwal Himalayas')">Kedarnath</button>
+    <button type="button"class="btn-toggle " onclick="fourdham('Then on to Rudraprayag which is just 160 km away from Badrinath Dham, the final Dham in your Yatra Situated in the Chamoli district of Uttarakhand, this religious site is set in the backdrop of the Neelkanth mountain peak, which leaves one breathless')">Badrinath</button>
   </div>
 
 
@@ -229,29 +257,29 @@ choice.innerText=`Monday 8 September 2023:-\n ${b}`;
 
 
 
-    function fourdham(b)
+    function fourdham(dham)
         {
-           const select = document.getElementById('bulb2');
-           if(b=='It will probably begin from Barkot. You will drive up to the Yamunotri Dham which will be followed by a 7 km trek. Or you could also visit Uttarkashi, which is just about 100 km from the Gangotri Dham')
+           const select1 = document.getElementById('bulb2');
+           if(dham=='It will probably begin from Barkot. You will drive up to the Yamunotri Dham which will be followed by a 7 km trek. Or you could also visit Uttarkashi, which is just about 100 km from the Gangotri Dham Yamuna, the second most sacred river in India, originates from Yamunotri. The Yamunotri temple is believed to be constructed by the king of Tehri, Naresh Sudarshan Shah in 1839')
            {
-           select.src = './../img/blog_images/dham1_yamunotri.jpg';
+           select1.src = './../img/blog_images/dham1_yamunotri.jpg';
            }
-           else if(b=='Located in the Uttarkashi district of Uttarakhand, this is one of the four sites which make up the Chota Char Dham. The shrine is very special to the Hindus because of its incomparable beauty')
+           else if(dham=='Located in the Uttarkashi district of Uttarakhand, this is one of the four sites which make up the Chota Char Dham. The shrine is very special to the Hindus because of its incomparable beauty  Another key factor is that legends believe that this place is the origin of the river Ganga after it descended from heaven')
             {
-                select.src = './../img/blog_images/dham2_gangotri.jpg';
+                select1.src = './../img/blog_images/dham2_gangotri.jpg';
             }
-            else if(b=='In this ancient temple, we find inscriptions written in Pali. The present temple was built by Adi Shankaracharya Ji. On the inner walls of the temple, there are sculptures of various deities and scenes from mythology')
+            else if(dham=='In this ancient temple, we find inscriptions written in Pali. The present temple was built by Adi Shankaracharya Ji. On the inner walls of the temple, there are sculptures of various deities and scenes from mythology  On the outside of the temple, there is a large statue of the Nandi Bull. The temple is set amidst the mountains of the Garhwal Himalayas')
           {
-               select.src = './../img/blog_images/dham3_kedarnath.jpg';
+               select1.src = './../img/blog_images/dham3_kedarnath.jpg';
             }
-            else if(b=='Then on to Rudraprayag which is just 160 km away from Badrinath Dham, the final Dham in your Yatra')
+            else if(dham=='Then on to Rudraprayag which is just 160 km away from Badrinath Dham, the final Dham in your Yatra Situated in the Chamoli district of Uttarakhand, this religious site is set in the backdrop of the Neelkanth mountain peak, which leaves one breathless')
           {
-               select.src = './../img/blog_images/dham3_badrinath (2).jpg';
+               select1.src = './../img/blog_images/dham3_badrinath (2).jpg';
             }
         
-            const choice=document.getElementById("select");
+            const choice=document.getElementById("select1");
 
-choice.innerText=`Monday 8 September 2023:-\n ${b}`; 
+choice.innerText=`Monday 8 September 2023:-\n ${dham}`; 
     }
     </script>
 
