@@ -11,26 +11,26 @@
 /* sliding images */
 .heading
 {
- font-weight: bold;
+
  text-align: center;
 }
 
 .moving-img-container
 {
-    padding: 40px;
-    width: 90%;
-    display: block;
+  
+    max-width: 100%;
+
+    position: relative;
     margin: auto;
+    margin-bottom: 20px;
     
 }
 @media screen and (max-width:768px)
   {
     .moving-img-container
   {
-    width:450px;
-    margin-left: -60px;
-    margin-bottom: -60px;
-    margin-top: -20px;
+        height: 100%;
+        width: 100%;
   }
 }
 .moving-img
@@ -64,12 +64,12 @@
 /* card */
 .card-img 
 {
-    background-color:rgb(176, 70, 176);
+
 }
 .card-img:hover{
 
     transform: scale(1.02);
-    border: 1px double rgba(154, 35, 138, 0.833);
+    border: 1px double  #f87878;
     box-shadow: 0 0 5px 1px rgb(55, 53, 52);
     overflow: hidden;
     transition: 1s;
@@ -90,12 +90,89 @@
   }
 .card-btn
 {
-  border: 1px double rgba(154, 35, 138, 0.833);
+  padding: 2px;
+  padding-left:10px;
+  padding-right: 10px;
+  font-size: 16px;
+  color: #f87878;;
+  border: 1px double  #f87878;
   border-radius: 20px;
+  
 }
+.card-btn:hover
+ {
+  transform: scale(1.080);
+  box-shadow: 0 0 3px 1px #f87878;
+  overflow: hidden;
+  transition: 1s;
+}
+
+@media screen and (max-width:768px)
+{
+  .card-btn
+{
+    border-radius: 15%;
+   font-size: 10px; 
+   padding-bottom: 2px;
+}
+}
+
+.card-title
+{
+  text-align: justify;
+  justify-content: space-between;
+  font-size: 21px;
+ 
+}
+
+@media screen and (max-width:768px)
+{
+  .card-title
+{
+    border-radius: 15%;
+   font-size: 15px; 
+}
+}
+.card-text-size
+{
+     padding-top: 5px;
+    text-align:justify;
+    font-size: 18px;
+      font-family: "Lobster", sans-serif;
+      
+      font-style: normal;
+      margin: auto;
+      margin-bottom: 10px;
+      
+}
+
+@media screen and (max-width:768px)
+{
+  .card-text-size
+{
+    border-radius: 15%;
+    font-size: 15px;
+}
+}
+
 
   /* maharaj */
 
+  .profile
+  {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  @media screen and (max-width:768px)
+  {
+    .profile
+  {
+    text-align: justify;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+}
   .container
   {
  
@@ -125,10 +202,9 @@
   {
       display: block;
       margin: auto;
-     height: 400px;
-     width: 101%;
-   padding: 4px;
-   padding-right: 8px;
+    height: 100%;
+    width: 100%;
+  
      
     
   }
@@ -146,21 +222,21 @@
 }
   .text
   {
-    padding-top: -100px;
-      text-align: center;
+   
+      text-align: justify;
       font-size: 20px;
-      color: purple;
       font-weight: bolder;
       font-family: "Lobster", sans-serif;
       font-weight: 400;
       font-style: normal;
+      padding: 10px;
   }
   @media screen and (max-width:768px)
   {
       .text
   {
     padding-top: 30px;
-    text-align: center;
+    text-align:justify;
       font-size: 15px;
       font-weight: bolder;
       font-family: "Lobster", sans-serif;
@@ -188,7 +264,7 @@
         width: 50%;
         height: 25px;
         border-radius: 15%;
-       font-size: 10px;  
+        font-size: 10px;  
     }
   }
 
@@ -196,15 +272,21 @@
   .btn-toggle
   {
      width: 12%;
-     height: 45px;
+     padding: 2px;
      margin: 20px;
-     background-color:rgb(176, 70, 176);
-     color:rgb(221, 255, 0);
+     color: #f87878;
      border-radius: 20px;
-     font-size: 20px;
-     box-shadow: 2px 5px 5px 12px 12px solid rgb(176, 70, 176);
+     font-size: 17px;
+     border: 1px double  #f87878;
      
   }
+
+  .btn-toggle:hover {
+    transform: scale(1.080);
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 1s;
+}
   @media screen and (max-width:768px)
   {
   .btn-toggle
@@ -218,10 +300,10 @@
   }
 }
 
-
-/* cards */
-.card-text-size
+.btn
 {
-    font-size: 15px;
+  padding-bottom: 2px;
 }
+
+
 
