@@ -79,6 +79,7 @@ img {
 .box {
     height: 150px;
     width: 150px;
+    box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 0 0 5px 1px #a4a4a4;
 }

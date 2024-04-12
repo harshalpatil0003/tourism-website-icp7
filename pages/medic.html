@@ -6,89 +6,148 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="../css/medic.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <style>
-        body{
-            background-color: #f5d6f5;
-            background-image: linear-gradient(0deg, #f5d6f5 0%, #d2f1f5 100%);
-        }
 
     </style>
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-around" style="margin: 30px auto; ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../icons/index/logo.png" class="logo" alt="logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/blog.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/medic.html">Medicare</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="login" type="button">
+                        <a href="../pages/login.html"> <img src="../icons/index/login.png" class="login-img"
+                                alt="login"></a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex justify-content-around centre mt-2">
 
         <div class="container d-flex align-items-center">
         <div class="p-3">
-        <h1 class="fw-bold p-3" style="font-size: 60px;">Find The Best Medicare Solutions</h1>
+        <h1 class="fw-bold p-3 h" style="font-size: 60px;">Find The Best Medicare Solutions</h1>
         <h5 class="px-3">Let us help you find the best quality Medical Services Wherever you are</h5>
-        <input type="text" placeholder="eg Cosmetic Surgery" class="m-3 p-3 w-75 border-danger">
+        <input type="text" placeholder="eg Ayurveda" class="m-3 p-3 w-75 border-danger">
         <div class="d-flex align-items-center column-gap-3">
             <div class="d-flex align-items-center p-2">
-            <img src="../icons/medic/m-location.png" class="p-3 h-25 g-col-6">
-            <div class="g-col-6"><b>100+</b><br>hos p-3pitals</div>
+            <img src="../icons/medic/m-location.png" class="p-3 h-25 g-col-6 icns">
+            <div class="g-col-6"><b class="h">100+</b><br>hospitals</div>
             </div>
             <div class="d-flex align-items-center p-2">
-            <img src="../icons/medic/m-help.png" class="p-3 h-25 g-col-6">
-            <div><b>24*7</b><br>Support</div>
+            <img src="../icons/medic/m-help.png" class="p-3 h-25 g-col-6 icns">
+            <div><b class="h">24*7</b><br>Support</div>
             </div>
             <div class="d-flex align-items-center p-2">
-            <img src="../icons/medic/m-customers.png" class="p-3 h-25 g-col-6">
-            <div><b>5000+</b><br>Customers</div>
+            <img src="../icons/medic/m-customers.png" class="p-3 h-25 g-col-6 icns">
+            <div><b class="h">5000+</b><br>Customers</div>
             </div>
         </div>
         </div>
         </div>
-        <div class="p-3">
+        <div class="p-3 d-flex">
         <img src="../img/medic-img/medic-1.jfif" height="500px" style="mix-blend-mode: multiply;">
         </div>
 
     </div>
 
-    <div class="container d-flex justify-content-evenly border border-info-subtle box-2" style="margin: 90px auto; ">
+    <div class="container d-flex justify-content-evenly border border-info-subtle box-2 centre mt-2 minh">
         <div class="div"><h1>99%</h1>Claim Settlement Ratio</div>
         <div class="div"><h1>24X7</h1>Customer Support</div>
         <div class="div"><h1>Min. $50k</h1>Medical Coverage with <span class="d-block">cashless hos p-3pitalisation</span></div>
         <div class="div"></div>
     </div>
 
-    <div class="container-fluid d-flex flex-row justify-content-around" style="margin: 150px auto;">
+    <div class="container-fluid d-flex flex-row justify-content-around centre">
         <div class="d-flex align-items-center">
-        <img src="../icons/medic/arrow-p.png" class="icons" onclick="revi()" ondblclick="revi3()">
+        <img src="../icons/medic/arrow-p.png" class="np" onclick="revi()" ondblclick="revi3()">
         </div>
-        <div class="d-flex align-items-around bg-primary  flex-column p-4 ">
-            <h6><b class="fs-4">➤</b> 200+ SUCCESSFUL TREATMENTS</h6>
+        <div class="d-flex align-items-around box-1  flex-column p-4 ">
+            <h6 style="color: rgb(250,210,126);"><b class="fs-4">➤</b> 200+ SUCCESSFUL TREATMENTS</h6>
             <h3>Explore Our Patients Success Stories</h3>
             <br>
             <img src="../img/medic-img/rev-1.jpg" class=" p-4 rev-img" id="rev-img">
         </div>
         <div class="container w-50 text-justify p-4">
             <img src="../icons/medic/double-quotes.png " class="icons mb-4">
-            <h3 id="rev-name">Mr Donald from Australia Underwent Colonoscopy and Medical Management</h3><br>
+            <h3 id="rev-name" class="minh">Mr Donald from Australia Underwent Colonoscopy and Medical Management</h3><br>
             <hr><br>
             <p id="rev">Mr. Donald Sams and his wife, from Canberra, Australia, were on a leisure tour across several places. In India, they planned their journey with Tour My India (TMI) and wished to visit Himachal Pradesh ; this was their fourth journey planned with TMI. Unfortunately, on the flight to India, Mr. Sams had a rectal bleeding, causing a concern…</p>
-            <button class="d-block btn-outline butto but">Read More</button>
+            <button class="d-block btn-outline but">Read More</button>
         </div>
         <div class="d-flex align-items-center">
-        <img src="../icons/medic/arrow-n.png" class="icons" onclick="revi()" ondblclick="revi2()">
+        <img src="../icons/medic/arrow-n.png" class="np" onclick="revi()" ondblclick="revi2()">
         <br><br><br>
         </div>
     </div>
 
-    <div class="d-flex container flex-column m-4">
-        <h6>➤ 200+ HOSPITALS</h6>
-        <h1>Our hospital Partners</h1>
-        <div class="d-flex flex-wrap justify-content-evenly p-2">
-            <img src="../img/medic-img/partner-1.jpg" class="hos p-3">
-            <img src="../img/medic-img/partner-2.jpg" class="hos p-3">
-            
-            <img src="../img/medic-img/partner-4.jpg" class="hos p-3">
-            <img src="../img/medic-img/partner-5.jpg" class="hos p-3">
-            
-            <img src="../img/medic-img/partner-7.jpg" class="hos p-3">
-            
-            <img src="../img/medic-img/partner-9.jpg" class="hos p-3">
-            <img src="../img/medic-img/partner-10.jpg" class="hos p-3 ">
-          
+    <div class="d-flex container-fluid justify-content-center flex-column m-4 centre">
+        <h6 class="minh"><b class="fs-4">➤</b> 200+ HOSPITALS</h6>
+        <h1 class="h">Our hospital Partners</h1>
+        <div class="container d-flex justify-content-center mt-4" >
+            <img src="../img/medic-img/Our-hospitals.png" class="hos">
+        </div>
+    </div>
+
+    <div class="d-flex container-fluid justify-content-center flex-column m-4 mt-4 centre box-1 p-4">
+        <h6 style="color: rgb(250,210,126);"><b class="fs-4">➤</b>DOCTORS SPEAK</h6>
+        <h3>Advisory Panel</h3>
+        <div class="container d-flex justify-content-center mt-4">
+            <div class="text-center">
+            <img src="../img/medic-img/doc-1.jpg" class="doc-img m-3 ">
+            <h4>Dr. Mayank Manjul Madan</h4>
+            <h6 class="minh">W Pratiksha Hospital</h6>
+            </div>
+            <div class="text-center">
+            <img src="../img/medic-img/doc-2.jpg" class="doc-img m-3">
+            <h4>Dr. Atul Mathur</h4>
+            <h6 class="minh">Fortis Escort</h6>
+            </div>
+            <div class="text-center">
+            <img src="../img/medic-img/doc-3.jpg" class="doc-img m-3">
+            <h4>Dr. Amit Chaudhary</h4>
+            <h6 class="minh">Asian Institute of Medical Science</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex container-fluid justify-content-center flex-column m-4 mt-4 centre p-4">
+        <h6 class="minh"><b class="fs-4">➤</b> KNOW US BETTER</h6>
+        <h1 class="h">Let us help you to plan Better Health Decision</h1>
+        <div class="container d-flex justify-content-center mt-4">
+            <div class="box-3 text-center m-3"><img src="../icons/medic/top-hos.png" class="icons p-3"><h4 class="h">200+</h4><h6>Top Accredited Hospitals</h6></div>
+            <div class="box-3 text-center m-3"><img src="../icons/medic/second-opt.png" class="icons p-3"><h4 class="h">800+</h4><h6>Second Opinions</h6></div>
+            <div class="box-3 text-center m-3"><img src="../icons/medic/assist.png" class="icons p-3"><h4 class="h">24/7</h4><h6>Patient  Assistance</h6></div>
+            <div class="box-3 text-center m-3"><img src="../icons/medic/inquiry.png" class="icons p-3"><h4 class="h">2500+</h4><h6>Inquiry Responses</h6></div>
+            <div class="box-3 text-center m-3"><img src="../icons/medic/medical-destinations.png" class="icons p-3"><h4 class="h">5+</h4><h6>Medical Destinations</h6></div>
+            <div class="box-3 text-center m-3"><img src="../icons/medic/success.png" class="icons p-3"><h4 class="h">200+</h4><h6>Successful Treatments</h6></div>
+
         </div>
     </div>
     
@@ -97,7 +156,7 @@
             let a = document.getElementById("rev-img");
             b = document.getElementById("rev-name");
             c = document.getElementById("rev");
-            c.innerText = "Laurie Knight is a 70-year-old Australian, who wished to undergo whole mouth restoration  to be able to eat properly with no pain and to improve the aesthetics. While browsing for the options online, Laurie discovered TMI Medical Tourism . The dental treatments like single or partial implants  are very expensive in Australia, compared to thos p-3e in India; hence…";
+            c.innerText = "Laurie Knight is a 70-year-old Australian, who wished to undergo whole mouth restoration  to be able to eat properly with no pain and to improve the aesthetics. While browsing for the options online, Laurie discovered TMI Medical Tourism . The dental treatments like single or partial implants  are very expensive in Australia, compared to those hospitals in India; hence…";
             b.innerText = "Laurie Knight  from Australia for Complete Mouth Restoration";
             a.src = "../img/medic-img/rev-2.jpg";
         }
@@ -105,7 +164,7 @@
             let a = document.getElementById("rev-img");
             b = document.getElementById("rev-name");
             c = document.getElementById("rev");
-            c.innerText = "Asia Madad, a cardiac patient from Afghanistan, had to undergo mitral valve replacement  for her condition. Asia Madad, her son, daughter, son-in-law and their children had travelled to India from Afghanistan for the surgical procedure in April 2019. They consulted a couple of hos p-3pitals in India but were not happy with the consultations. Finally, they reached out for ";
+            c.innerText = "Asia Madad, a cardiac patient from Afghanistan, had to undergo mitral valve replacement  for her condition. Asia Madad, her son, daughter, son-in-law and their children had travelled to India from Afghanistan for the surgical procedure in April 2019. They consulted a couple of hospitals in India but were not happy with the consultations. Finally, they reached out for ";
             b.innerText = "Bibi Asia Madad from Afghanistan for Mitral Valve Replacement";
             a.src = "../img/medic-img/rev-3.jpg";
         }

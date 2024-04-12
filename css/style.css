@@ -1,0 +1,15 @@
+.nav-link {
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: rgb(255, 210, 126);
+}
+
+.logo {
+    height: 50px;
+}
+
+.login-img {
+    height: 30px;
+}
