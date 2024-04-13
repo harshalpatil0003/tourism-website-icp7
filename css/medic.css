@@ -8,7 +8,9 @@
 .h{
   color:  #fca66c;
 }
-
+.bi-h{
+  height: 500px;
+}
 .centre{
   margin: 150px auto;
 }
@@ -41,7 +43,7 @@
 }
 
 .but:hover{
-  transform: scale(1.080);
+    transform: scale(1.080);
     box-shadow: 0 0 5px 1px #f87878;
     color: #f87878;
     overflow: hidden;
@@ -73,10 +75,10 @@
  }
 .box-2:hover{
   transform: scale(1.080);
-  box-shadow: 0 0 5px 1px #f87878;
-  color: #f87878;
-  overflow: hidden;
-  transition: 1s;
+    box-shadow: 0 0 5px 1px #f87878;
+    color: #f87878;
+    overflow: hidden;
+    transition: 1s;
 }
 
  .hos{
@@ -106,6 +108,18 @@
   transition: 1s;
  }
 
- @media screen and (max-width: 1200px){
+ @media screen and (max-width: 769px){
+    .icons{
+      width: 55%;
+    }
+    .hos{
+      height: 100%;
+      width: 100%;
+    }
+ }  
 
+ @media screen and (max-width: 970px){
+    .np{
+      position: sticky;
+    }
  }
