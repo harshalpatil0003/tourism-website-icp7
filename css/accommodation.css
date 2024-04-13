@@ -129,8 +129,6 @@ img {
     transition: all 0.3s ease;
 }
 
-
-  
 .btn-primary:hover {
     background-color: #f87878;;
     transform: scale(1.05);
@@ -161,6 +159,29 @@ img {
     overflow: hidden;
     transition: 0.2s;
 }
+
+ /* Featured Dining Cards  */
+
+ .featured-dining{
+    padding: 30px 0;
+ }
+
+.card-dining{
+
+    height: 550px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.card-dining:hover{
+    transform: scale(1);
+    border: 1px double #000000d4;
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+
 
 /* footer */
 .card-footer-card{
