@@ -52,22 +52,29 @@ p {
 
 .submit-button {
   margin-bottom: 20px;
+  
 }
 
 #submitBtn {
   background-color: /*plum;*/black;
-  color: #fff;
+  color: orange;
+  
   border: none;
   padding: 10px 30px;
   border-radius: 10px;
   cursor: pointer;
   margin: 20px;
+  font-size: 20px;
   
 }
 
-/* #submitBtn:hover {
-  background-color: #0056b3;
-}*/
+ #submitBtn:hover {
+    transform: scale(1.080);
+  box-shadow: 0 0 3px 2px orange;
+  overflow: hidden;
+  transition: 1s;
+ /* background-color: #0056b3;*/
+}
 
 textarea {
   background-color: /*lightblue;*/#fff;
@@ -117,7 +124,11 @@ textarea {
   border-radius: 10px;
   margin: 5px 10px;
 }
+.review .r-box:hover{
+transform: translateY(-15px);
+transition: .5s;
 
+}
 
 
 .review .r-box img{
