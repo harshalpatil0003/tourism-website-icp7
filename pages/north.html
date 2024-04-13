@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/x-icon" href="../icons/index/feevicon.png">
+    <title>West India</title>
+    <style>
+        body {
+            background: rgb(255, 247, 155);
+            background: linear-gradient(0deg, rgba(255, 247, 155, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .product {
+            margin: 10px auto;
+            width: 550px;
+            height: 300px;
+            object-fit: cover;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px #6b666b;
+
+            display: block;
+        }
+
+        .product-Images-Container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .product-image {
+            margin: 2px auto;
+            height: 60px;
+            width: 85px;
+            object-fit: cover;
+            border: 1px solid #640404;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .login-img {
+            height: 30px;
+        }
+
+        .place {
+            width: 600px;
+            flex-direction: column;
+            margin: 10px auto;
+            box-shadow: 0 0 10px 1px #797979;
+        }
+
+        .information {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../icons/index/logo.png" class="logo" alt="logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <button type="button" class="btn ">
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn ">
+                            <a class="nav-link" href="about.html">About Us</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn ">
+                            <a class="nav-link" href="packages.html">Packages</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn">
+                            <a class="nav-link" href="../pages/blog.html">Blogs</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn ">
+                            <a class="nav-link" href="../pages/medic.html">Medicare</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn ">
+                            <a class="nav-link" href="../pages/accommodation.html">accommodation</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn "> <a class="nav-link"
+                                href="../pages/review.html">Reviews</a></button>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="login" type="button">
+                        <a href="../pages/login.html"> <img src="../icons/index/login.png" class="login-img"
+                                alt="login"></a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex flex-wrap">
+
+        <div class="place  border border-dark p-2 rounded-2">
+            <h2>Agra</h2>
+            <div>
+                <img src="../img/india tours/north/tajbig.jpeg" class="product" id="Goa" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/north/taj1.jpeg" class="product-image"
+                    onclick="change('../img/india tours/north/taj1.jpeg')" />
+
+                <img src="../img/india tours/north/tomb.jpg" class="product-image"
+                    onclick="change('../img/india tours/north/tomb.jpg')" />
+
+                <img src="../img/india tours/north/jehangir.jpg" class="product-image"
+                    onclick="change('../img/india tours/north/jehangir.jpg')" />
+
+                <img src="../img/india tours/north/fort.jpg" class="product-image"
+                    onclick="change('../img/india tours/north/fort.jpg')" />
+
+                <img src="../img/india tours/north/museum.jpg" class="product-image"
+                    onclick="change('../img/india tours/north/museum.jpg')" />
+
+                <img src="../img/india tours/north/mehtab.jpg" class="product-image"
+                    onclick="change('../img/india tours/north/mehtab.jpg')" />
+
+            </div>
+
+            <script>
+                function change(Name) {
+                    const goa = document.getElementById('Goa');
+                    goa.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For:</span> Taj Mahal is the best place to visit in Agra.</p>
+            <div class="info">
+                <p class="information">Home to one of the 7 wonders of the world, the Taj Mahal, 
+                    Agra is a sneak peek into the architectural history with other UNESCO World Heritage
+                     Sites as Agra Fort and Fatehpur Sikri. History, architecture, romance all together
+                     create the magic of Agra and hence makes for a must-visit for anyone living in or visiting India..
+                </p>
+            </div>
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+
+        <div class="place border border-dark p-2 rounded-2">
+            <h2>Delhi</h2>
+            <div>
+                <img src="../img/india tours/north/delhi.jpg" class="product" id="Udaipur" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/north/redfort.jpg" class="product-image"
+                    onclick="changes('../img/india tours/north/redfort.jpg')" />
+
+                <img src="../img/india tours/north/qutub-minar.jpg" class="product-image"
+                    onclick="changes('../img/india tours/north/qutub-minar.jpg')" />
+
+                <img src="../img/india tours/north/SafdarJangs_Tomb.jpg" class="product-image"
+                    onclick="changes('../img/india tours/north/SafdarJangs_Tomb.jpg')" />
+
+                <img src="../img/india tours/north/Jama_Masjid.jpg" class="product-image"
+                    onclick="changes('../img/india tours/north/Jama_Masjid.jpg')" />
+
+                <img src="../img/india tours/north/Gandhi_Smriti.jpg" class="product-image"
+                    onclick="changes('../img/india tours/north/Gandhi_Smriti.jpg')" />
+
+                <img src="../img/india tours/north/LotusTemple.jpg" class="product-image"
+                    onclick="changes('../img/india tours/north/LotusTemple.jpg')" />
+
+            </div>
+
+            <script>
+                function changes(Name) {
+                    const udaipur = document.getElementById('Udaipur');
+                    udaipur.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For: </span>India Gate  Qutub Minar  Akshardham Temple Delhi</p>
+            <p>From historical monuments to crowded shopping malls, from Mughal gardens to Delhi 
+                University campus, the capital city has multiple personalities making it 'The good,
+                the bad and the ugly'.The Capital city of India and the base location to explore North 
+                India, Delhi is considered to be the city with a heart.
+            </p>
+
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+
+        <div class="place border border-dark p-2 rounded-2">
+            <h2>Uttarakhand</h2>
+            <div>
+                <img src="../img/india tours/north/Uttarakhand/AULI.jpg" class="product" id="Jaipur" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/north/Uttarakhand/Trishul_peak.jpg" class="product-image"
+                    onclick="changed('../img/india tours/north/Uttarakhand/Trishul_peak.jpg')" />
+
+                <img src="../img/india tours/north/Uttarakhand/auli1.jpg" class="product-image"
+                    onclick="changed('../img/india tours/north/Uttarakhand/auli1.jpg')" />
+
+                <img src="../img/india tours/north/Uttarakhand/chenab_lake.jpg" class="product-image"
+                    onclick="changed('../img/india tours/north/Uttarakhand/chenab_lake.jpg')" />
+
+                <img src="../img/india tours/north/Uttarakhand/gurso_bugyal.jpg" class="product-image"
+                    onclick="changed('../img/india tours/north/Uttarakhand/gurso_bugyal.jpg')" />
+
+                <img src="../img/india tours/north/Uttarakhand/Kwani_bugyal.jpg" class="product-image"
+                    onclick="changed('../img/india tours/north/Uttarakhand/Kwani_bugyal.jpg')" />
+
+                <img src="../img/india tours/north/Uttarakhand/nandaprayag.jpg" class="product-image"
+                    onclick="changed('../img/india tours/north/Uttarakhand/nandaprayag.jpg')" />
+
+            </div>
+
+            <script>
+                function changed(Name) {
+                    const jaipur = document.getElementById('Jaipur');
+                    jaipur.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For:</span>Skiing in Auli  Trishul Peak  Auli Ropeway</p>
+            <div class="info">
+                <p class="information">Dotted with the apple orchards, old oaks and pine trees there is no 
+                    dearth of natural beauty in Auli. Apart from skiing you can also go for numerous treks in the 
+                    hills of Garhwal Himalayas and enjoy the spellbinding views of the snow-draped mountains. 
+                    Auli is a popular hill resort in the Himalayan range dating back to 8th Century AD.
+                </p>
+            </div>
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+
+        <div class="place border border-dark p-2 rounded-2">
+            <h2>Jammu & Kashmir</h2>
+            <div>
+                <img src="../img/india tours/north/jammu/LADAKH.jpg" class="product" id="Ajanta" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/north/jammu/zanskar.jpg" class="product-image"
+                    onclick="chang('../img/india tours/north/jammu/zanskar.jpg')" />
+
+                <img src="../img/india tours/north/jammu/spituk.jpg" class="product-image"
+                    onclick="chang('../img/india tours/north/jammu/spituk.jpg')" />
+
+                <img src="../img/india tours/north/jammu/hemis_wildlife.png" class="product-image"
+                    onclick="chang('../img/india tours/north/jammu/hemis_wildlife.png')" />
+
+                <img src="../img/india tours/north/jammu/stupa.jpg" class="product-image"
+                    onclick="chang('../img/india tours/north/jammu/stupa.jpg')" />
+
+                <img src="../img/india tours/north/jammu/sand_dunes.jpg" class="product-image"
+                    onclick="chang('../img/india tours/north/jammu/sand_dunes.jpg')" />
+
+                <img src="../img/india tours/north/jammu/nubra_valley.jpeg" class="product-image"
+                    onclick="chang('../img/india tours/north/jammu/nubra_valley.jpeg')" />
+
+            </div>
+
+            <script>
+                function chang(Name) {
+                    const ajanta = document.getElementById('Ajanta');
+                    ajanta.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For:</span> Pangong Lake  Khardung La  Magnetic Hill
+            </p>
+            <div class="info">
+                <p class="information">A land like no other with superabundance of attractions to visit
+                    and phantasmagoric and fabulous landscapes, amazing people and culture, Ladakh is truly a heaven on Earth.
+                </p>
+            </div>
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+        <div class="place border border-dark p-2 rounded-2">
+            <h2>Punjab</h2>
+            <div>
+                <img src="../img/india tours/north/Punjab/AMRITSAR.jpg" class="product" id="Gir" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/north/Punjab/amrit1.jpg" class="product-image"
+                    onclick="changl('../img/india tours/north/Punjab/amrit1.jpg')" />
+
+                <img src="../img/india tours/north/Punjab/gurudwara.jpg" class="product-image"
+                    onclick="changl('../img/india tours/north/Punjab/gurudwara.jpg')" />
+
+                <img src="../img/india tours/north/Punjab/bibeksar_sahib.jpg" class="product-image"
+                    onclick="changl('../img/india tours/north/Punjab/bibeksar_sahib.jpg')" />
+
+                <img src="../img/india tours/north/Punjab/hari_mandir.jpg" class="product-image"
+                    onclick="changl('../img/india tours/north/Punjab/hari_mandir.jpg')" />
+
+                <img src="../img/india tours/north/Punjab/jallianwala_bagh.jpg" class="product-image"
+                    onclick="changl('../img/india tours/north/Punjab/jallianwala_bagh.jpg')" />
+
+                <img src="../img/india tours/north/Punjab/golden_temple.jpg" class="product-image"
+                    onclick="changl('../img/india tours/Punjab/golden_temple.jpg')" />
+
+            </div>
+
+            <script>
+                function changl(Name) {
+                    const gir = document.getElementById('Gir');
+                    gir.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For:</span>"Gateway to Punjab - home to Golden Temple"
+            </p>
+            <div class="info">
+                <p class="information">Amritsar, colloquially known as Ambarsar, is a city steeped in history and spirituality. It stands as a prominent cultural and religious hub in the heart of Punjab, as the second largest city of India. The city is most renowned for the Golden Temple, the holiest shrine in Sikhism. The resplendent temple, surrounded by the sacred Amrit Sarovar (pool of nectar), is a testament to Sikh architecture and welcomes people from all walks of life with open arms.
+
+                    Amritsar is the spiritual and cultural centre of the Sikh Religion.
+                    
+                </p>
+            </div>
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+
+
+        <div class="place border border-dark p-2 rounded-2">
+            <h2>Himachal Pradesh
+            </h2>
+            <div>
+                <img src="../img/india tours/north/Himachal.jpg" class="product" id="Alibaug" />
+            </div>
+
+            <div class="product-Images-Container" style="float: left;">
+                <img src="../img/india tours/north/manali/soplang.jpg" class="product-image"
+                    onclick="changg('../img/india tours/north/manali/soplang.jpg')" />
+
+                <img src="../img/india tours/north/manali/mountains.jpg" class="product-image"
+                    onclick="changg('../img/india tours/north/manali/mountains.jpg')" />
+
+                <img src="../img/india tours/north/manali/view.jpg" class="product-image"
+                    onclick="changg('../img/india tours/north/manali/view.jpg')" />
+
+                <img src="../img/india tours/north/manali/parachute.jpg" class="product-image"
+                    onclick="changg('../img/india tours/north/manali/parachute.jpg')" />
+
+                <img src="../img/india tours/north/manali/Rohtang.jpg" class="product-image"
+                    onclick="changg('../img/india tours/north/manali/Rohtang.jpg')" />
+
+                <img src="../img/india tours/north/manali/source.jpg" class="product-image"
+                    onclick="changg('../img/india tours/north/manali/source.jpg')" />
+
+            </div>
+
+            <script>
+                function changg(Name) {
+                    const alibaug = document.getElementById('Alibaug');
+                    alibaug.src = Name;
+
+                }
+            </script>
+            <p><span style="font-weight: 700;">Known For:</span> Hidimba Temple  Solang Valley  Manu Temple</p>
+            <div class="info">
+                <p class="information">Nestled in between the snow-capped slopes of the Pir Panjal and the 
+                    Dhauladhar ranges, Manali is one of the most popular hill stations in the country. With 
+                    jaw-dropping views, lush green forests, sprawling meadows carpeted with flowers, 
+                    gushing blue streams, a perpetual fairy-tale like mist lingering in the air, and a 
+                    persistent fragrance of pines and freshness - Manali has been blessed with extraordinary scenic beauty.
+                </p>
+            </div>
+            <button type="button" class="btn btn-success" style="display: block; margin: 10px auto;">Book Tour
+                Now</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -10,14 +10,14 @@ min-height: 100vh;
 margin: 0;
 padding: 0;
 }
-.card {
+.r-card {
  /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);*/
  background-color: #fb7e7e;
 background-image: linear-gradient(62deg, #fb7e7e 0%, #f7ce68 100%);
 
   width: 400px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f87878;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  
@@ -56,12 +56,11 @@ p {
 }
 
 #submitBtn {
-  background-color: /*plum;*/black;
-  color: orange;
-  
-  border: none;
-  padding: 10px 30px;
-  border-radius: 10px;
+  background-color: /*plum;*/#f87878;
+  color:rgb(255, 210, 126);
+  border: 2px solid rgb(255, 210, 126);
+  padding: 5px 30px;
+  border-radius: 20px;
   cursor: pointer;
   margin: 20px;
   font-size: 20px;
@@ -69,8 +68,10 @@ p {
 }
 
  #submitBtn:hover {
+  transform: scale(1.080);
+    box-shadow: 0 0 5px 1px rgb(255, 210, 126);
     transform: scale(1.080);
-  box-shadow: 0 0 3px 2px orange;
+
   overflow: hidden;
   transition: 1s;
  /* background-color: #0056b3;*/
@@ -153,12 +154,14 @@ transition: .5s;
   color: orange;
   font-size: 20px;
 }
+
+
   /* Responsive adjustments */
   @media (max-width: 600px) {
     .stars {
       font-size: 16px;
     }
-    .card{
+    .r-card{
         width:300px;
     }
     h1{
