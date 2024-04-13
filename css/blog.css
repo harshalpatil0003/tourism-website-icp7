@@ -1,9 +1,6 @@
-.body
+body
 {
-    /* background-color: #8bff45;
-    background-image: linear-gradient(312deg, #8bff45 0%, #ffffff 46%, #ffe396 100%);    */
-    background-color: #f5d6f5;
-    background-image: linear-gradient(0deg, #f5d6f5 0%, #e9f7fa 100%);
+   
     font-family: Verdana, sans-serif;
     
 }
@@ -77,16 +74,16 @@
 
 .card
 {
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   border-radius: 10px;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
 }
 
 .card:hover{
     transform: scale(1.002);
-    border: 1px double rgba(154, 35, 138, 0.833);
+    border: 1px double  #f87878;
     overflow: hidden;
     transition: 1s;
+    
   }
 .card-btn
 {
@@ -135,12 +132,9 @@
 }
 .card-text-size
 {
-     padding-top: 5px;
-    text-align:justify;
-    font-size: 18px;
-      font-family: "Lobster", sans-serif;
-      
-      font-style: normal;
+      padding-top: 5px;
+      text-align:justify;
+      font-size: 18px;
       margin: auto;
       margin-bottom: 10px;
       
@@ -178,13 +172,10 @@
  
     height:100%;
     width: 100%;
-   /* border: 1px double rgba(154, 35, 138, 0.833); */
-   /* box-shadow: 5px 10px 20px 1px rgb(55, 53, 52); */
- display: block;
- margin:10px auto;
- background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-  border-radius: 10px;
-  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
+    display: block;
+    margin:10px auto;
+    border-radius: 10px;
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
   }
   @media screen and (max-width:768px)
   {
@@ -225,9 +216,6 @@
    
       text-align: justify;
       font-size: 20px;
-      font-weight: bolder;
-      font-family: "Lobster", sans-serif;
-      font-weight: 400;
       font-style: normal;
       padding: 10px;
   }
@@ -235,13 +223,9 @@
   {
       .text
   {
-    padding-top: 30px;
-    text-align:justify;
+      padding-top: 30px;
+      text-align:justify;
       font-size: 15px;
-      font-weight: bolder;
-      font-family: "Lobster", sans-serif;
-      font-weight: 400;
-      font-style: normal;
       margin: auto;
       margin-bottom: 10px;
       
@@ -278,6 +262,7 @@
      border-radius: 20px;
      font-size: 17px;
      border: 1px double  #f87878;
+     background-color: white;
      
   }
 
