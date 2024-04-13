@@ -70,8 +70,16 @@ img {
     padding: 10px 0;
     padding-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px 1px #f87878;
+    /* box-shadow: 0 0 5px 1px #f87878; */
     margin-bottom: 20px;
+}
+
+.search-bar:hover{
+    transform: scale(1);
+    /* border: 1px double #f87878; */
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 0.2s;
 }
 
 /* Custom styles for form elements */
@@ -138,7 +146,13 @@ img {
     margin-bottom: 20px;
     border-radius: 20px;
 }
-
+.card-accommodation:hover{
+    transform: scale(1);
+    border: 1px double #000000d4;
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 0.2s;
+}
 
 
 .card-footer-card{
