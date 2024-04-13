@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    .centered{
+        display: none;
+    }
+}
+
+.slideshow-container{
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-10%,-10%);
+
+    
+}
+
+ /* search bar section */
+ .search-bar {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+/* Custom styles for form elements */
+.search-bar input[type="text"],
+.search-bar input[type="date"],
+.search-bar input[type="number"] {
+    border-radius: 30px; 
+    padding: 10px 20px; 
+}
+
+.search-bar input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.search-bar .btn {
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+
+
+ /* featured listings section */
+ .featured-listings {
+    padding: 50px 0;
+    
+ }
+
+ .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
