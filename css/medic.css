@@ -45,28 +45,24 @@
 .but:hover{
     transform: scale(1.080);
     box-shadow: 0 0 5px 1px #f87878;
-    color: #f87878;
+    color: rgb(255, 210, 126);
     overflow: hidden;
     transition: 1s;
 }
 .but{
-  flex: 1 1 auto;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: rgb(255, 210, 126);
-  width: 130px;
-  border-radius: 20px;
-  box-shadow: 0 0 5px 1px #a4a4a4;
-  border: none;
-  border-radius: 10px;
+
+background-color:#f87878 ;
+border-radius:20px;
+padding: 2px;
+padding-left: 10px;
+padding-right: 10px;
+  color:rgb(255, 210, 126);
+  border: 2px solid rgb(255, 210, 126);
  }
  .box-1{
   color: white;
   background-color: #f87878;
+  border-radius: 5px;
  }
  .box-2{
   padding: 25px;
@@ -121,5 +117,12 @@
  @media screen and (max-width: 970px){
     .np{
       position: sticky;
+    }
+    
+ }
+
+ @media screen and (max-width: 1200px){
+    .container-fluid{
+      flex-wrap: wrap;
     }
  }
