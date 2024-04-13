@@ -1,9 +1,17 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;500&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mySlides {
@@ -39,6 +47,7 @@ img {
     position: relative;
     text-align: center;
     color: white;
+    
 
 }
 .centered{
