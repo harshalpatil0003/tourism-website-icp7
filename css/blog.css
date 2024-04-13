@@ -35,7 +35,8 @@ body
     height:100%;
     width: 80%;
     border-radius: 10px;
-    box-shadow: 0  0 5px 1px #f87878;
+    box-shadow: 0  0 5px 1px #fab732;
+
 
 }
 @media screen and (max-width:768px)
@@ -81,7 +82,7 @@ body
 
 .cards:hover{
     transform: scale(1.002);
-    box-shadow: 0  0 5px 1px #f87878;
+    box-shadow: 0  0 5px 1px #fab732;
     overflow: hidden;
     transition: 1s;
     background-color: white;
@@ -102,7 +103,7 @@ body
 .card-btn:hover
  {
   transform: scale(1.080);
-  box-shadow: 0  0 5px 1px #f87878;
+  box-shadow: 0  0 5px 1px #fab732;
   overflow: hidden;
   transition: 1s;
 }
@@ -178,12 +179,11 @@ body
     display: block;
     margin:10px auto;
     border-radius: 10px;
-    box-shadow: 0  0 5px 1px #f87878;
-    background-color: white;
+
   }
   .container:hover
   {
-    box-shadow: 0  0 5px 1px #f87878;
+    box-shadow: 0  0 5px 1px #fab732;
   }
   @media screen and (max-width:768px)
   {
@@ -270,8 +270,7 @@ body
     padding-right: 10px;
     font-size: 17px;
      margin: 20px;
-     color:rgb(255,210,126);
-     background-color: #f87878;
+
      border: 2px solid  rgb(255,210,126);
      border-radius: 20px;
     
@@ -280,8 +279,7 @@ body
 
   .btn-toggle:hover {
     transform: scale(1.080);
-    box-shadow: 0 0 5px 1px #f87878;
-   
+    box-shadow: 0  0 5px 1px #ffaf0f;
 }
   @media screen and (max-width:768px)
   {
