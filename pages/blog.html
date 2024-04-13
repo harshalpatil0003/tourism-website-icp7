@@ -17,7 +17,53 @@
      <!-- <link rel="stylesheet" href="./../css/footer.css"> -->
 
     <style>
+     @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;500&display=swap');
+    
+</style>
+   <style> 
+.bg{
+   background-color: black;
+    width: 100%;
+    font-weight: 500;
+}
 
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.flex-column a:hover {
+    margin-left: -10px;
+    transition: 1s;
+}
+
+h4 {
+    color: orange;
+}
+
+@media screen and (max-width: 768px) {
+    .foo {
+        text-align: center;
+    }
+}
+
+.fa-brands {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.fa-brands:hover {
+    transform: scale(1.085);
+    transition: 1s
+}
+.copyright{
+    color: #fff;
+}
+
+.b 
+{
+  background-color: white;
+}
     </style>
 
 
@@ -135,7 +181,8 @@
     Chota Char Dham is a spiritual tour of four pilgrimage sites in India, namely Yamunotri, Gangotri, Kedarnath, and Badrinath, all present in Uttarakhand.<u></u><br>
  </p>
 
-  </div>
+ <h6 class="profile"> july 13, 2023&nbsp;<span><img src="./../img/blog_images/profile-user.png" style="height: 17px;"></span><b>Bhakti Shinde </b>Monsoon trip to Raigad Fort  King of Forts</h6>
+</div>
   <div class="btn-container">
   <button  class="btn-toggle" type="button" onclick="chardham('It will probably begin from Barkot. You will drive up to the Yamunotri Dham which will be followed by a 7 km trek. Or you could also visit Uttarkashi, which is just about 100 km from the Gangotri Dham Yamuna, the second most sacred river in India, originates from Yamunotri. The Yamunotri temple is believed to be constructed by the king of Tehri, Naresh Sudarshan Shah in 1839')">Yamunotri</button>
   <button  class="btn-toggle" type="button" onclick="chardham('Located in the Uttarkashi district of Uttarakhand, this is one of the four sites which make up the Chota Char Dham. The shrine is very special to the Hindus because of its incomparable beauty  Another key factor is that legends believe that this place is the origin of the river Ganga after it descended from heaven')">Gangotri </button>
@@ -145,7 +192,7 @@
 </div>
 <br>
 <!-- cards -->
-<h3 class="heading">Blogs About Uttarakhand</h3>
+<h3 class="heading" style="margin-bottom: -40px;">Blogs About Uttarakhand</h3>
 <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 20px;width: 90%;background-color: white;
 margin: 20px auto;
 border-radius: 10px;
@@ -160,7 +207,7 @@ line-height: 170%;">
              </p>
          
         </div>
-        <div class="card-footer cf">
+        <div class="card-footer">
           <button type="button" class="card-btn">READ MORE</button>&nbsp;
           <small  class="text-body-secondary profile"><span><img src="./../img/blog_images/profile-user.png" style="height: 17px;"></span> <b>by Sharmin </b> july 13</small>
         </div>
@@ -175,7 +222,7 @@ line-height: 170%;">
              </p>
          
         </div>
-        <div class="card-footer cf">
+        <div class="card-footer">
           <button type="button" class="card-btn">READ MORE</button>&nbsp;
           <small  class="text-body-secondary profile"><span><img src="./../img/blog_images/profile-user.png" style="height: 17px;"></span> <b>Bhakti Shinde </b> july 13</small>
         </div>
@@ -190,7 +237,7 @@ line-height: 170%;">
             While there are plenty of reasons to visit the Indian Himalayas, exploring its rich wildlife is as good as any.</p>
           
         </div>
-        <div class="card-footer cf">
+        <div class="card-footer">
           
           <button type="button" class="card-btn">READ MORE</button>&nbsp;
           <small class="text-body-secondary profile"><span><img src="./../img/blog_images/profile-user.png" style="height: 17px;">
@@ -203,7 +250,7 @@ line-height: 170%;">
 <br>
 
   <!-- kashmir-->
-  <h3 class="heading">Blogs About Kashmir</h3>
+  <h3 class="heading" style="margin-bottom: -40px;">Blogs About Kashmir</h3>
   <div class="row row-cols-1 row-cols-md-3 g-4 " style="padding: 20px;width: 90%;background-color: white;
   margin: 20px auto;
   border-radius: 10px;
@@ -218,7 +265,7 @@ line-height: 170%;">
                </p>
             
           </div>
-
+          <div class="card-footer ">
             <button type="button" class="card-btn">READ MORE</button>&nbsp;
             <small class="text-body-secondary profile"><span><img src="./../img/blog_images/profile-user.png" style="height: 17px;">
             </span> <b>by Vaishnavi </b> March 10
@@ -234,7 +281,7 @@ line-height: 170%;">
             <p class="card-text card-text-size">Kashmir is heaven on earth with its alpine peaks and snow-clad ranges. From trekking to solo trips to leisurely family vacations, Kashmir is a complete package </p>
          
           </div>
-          <div class="card-footer cf">
+          <div class="card-footer">
             <button type="button" class="card-btn">READ MORE</button>&nbsp;
             <small class="text-body-secondary profile"><span><img src="./../img/blog_images/profile-user.png" style="height: 17px;">
               </span> <b>by Atharv </b> Feb 3
@@ -251,7 +298,7 @@ line-height: 170%;">
               While there are plenty of reasons to visit the Indian Himalayas, exploring its rich wildlife is as good as any.</p>
            
           </div>
-          <div class="card-footer cf">
+          <div class="card-footer">
             <button type="button" class="card-btn">READ MORE</button>&nbsp;
             <small class="text-body-secondary profile"><span><img src="./../img/blog_images/profile-user.png" style="height: 17px;">
             </span> <b>Omkar More </b> Apr 3
@@ -378,7 +425,7 @@ choice.innerText=`Blog :\n ${b}`;
           </div>
 
       </div>
-
+      <div class="card-footerr">
           <p class="copyright text-center">
               Copyright&copy;NamasteTrail 2024
           </p>

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;500&display=swap');
+
 body
 {
    
@@ -35,8 +38,7 @@ body
     height:100%;
     width: 80%;
     border-radius: 10px;
-    box-shadow: 0  0 5px 1px #fab732;
-
+    box-shadow: 0  0 5px 1px #f87878;
 
 }
 @media screen and (max-width:768px)
@@ -73,16 +75,15 @@ body
     transition: 1s;
 }
 
-.cards
+.card
 {
   border-radius: 10px;
-  box-shadow: 0  0 5px 1px #f87878;
   background-color: white;
 }
 
-.cards:hover{
+.card:hover{
     transform: scale(1.002);
-    box-shadow: 0  0 5px 1px #fab732;
+    box-shadow: 0  0 5px 1px #f87878;
     overflow: hidden;
     transition: 1s;
     background-color: white;
@@ -103,7 +104,7 @@ body
 .card-btn:hover
  {
   transform: scale(1.080);
-  box-shadow: 0  0 5px 1px #fab732;
+  box-shadow: 0  0 5px 1px #f87878;
   overflow: hidden;
   transition: 1s;
 }
@@ -179,11 +180,12 @@ body
     display: block;
     margin:10px auto;
     border-radius: 10px;
-
+    box-shadow: 0  0 5px 1px #f87878;
+    background-color: white;
   }
   .container:hover
   {
-    box-shadow: 0  0 5px 1px #fab732;
+    box-shadow: 0  0 5px 2px #f87878;
   }
   @media screen and (max-width:768px)
   {
@@ -245,7 +247,7 @@ body
   {
       display: flex;
       justify-content: center;
-      margin-top: 40px;
+     
   }
     @media screen and (max-width:768px)
     {
@@ -270,7 +272,8 @@ body
     padding-right: 10px;
     font-size: 17px;
      margin: 20px;
-
+     color:rgb(255,210,126);
+     background-color: #f87878;
      border: 2px solid  rgb(255,210,126);
      border-radius: 20px;
     
@@ -279,7 +282,8 @@ body
 
   .btn-toggle:hover {
     transform: scale(1.080);
-    box-shadow: 0  0 5px 1px #ffaf0f;
+    box-shadow: 0 0 5px 1px #f87878;
+   
 }
   @media screen and (max-width:768px)
   {
