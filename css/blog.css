@@ -2,7 +2,7 @@ body
 {
    
     font-family: Verdana, sans-serif;
-    
+    background-color: white;
 }
 
 /* sliding images */
@@ -35,7 +35,7 @@ body
     height:100%;
     width: 80%;
     border-radius: 10px;
-    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
+    box-shadow: 0  0 5px 1px #f87878;
 
 }
 @media screen and (max-width:768px)
@@ -72,17 +72,19 @@ body
     transition: 1s;
 }
 
-.card
+.cards
 {
   border-radius: 10px;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
+  background-color: white;
 }
 
-.card:hover{
+.cards:hover{
     transform: scale(1.002);
-    border: 1px double  #f87878;
+    box-shadow: 0  0 5px 1px #f87878;
     overflow: hidden;
     transition: 1s;
+    background-color: white;
     
   }
 .card-btn
@@ -91,15 +93,16 @@ body
   padding-left:10px;
   padding-right: 10px;
   font-size: 16px;
-  color: #f87878;;
-  border: 1px double  #f87878;
+  color:rgb(255,210,126);
+  background-color: #f87878;
+  border: 2px solid  rgb(255,210,126);
   border-radius: 20px;
   
 }
 .card-btn:hover
  {
   transform: scale(1.080);
-  box-shadow: 0 0 3px 1px #f87878;
+  box-shadow: 0  0 5px 1px #f87878;
   overflow: hidden;
   transition: 1s;
 }
@@ -175,7 +178,11 @@ body
     display: block;
     margin:10px auto;
     border-radius: 10px;
-    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
+    box-shadow: 0  0 5px 1px #f87878;
+  }
+  .container:hover
+  {
+    box-shadow: 0  0 5px 1px #f87878;
   }
   @media screen and (max-width:768px)
   {
@@ -255,22 +262,24 @@ body
  
   .btn-toggle
   {
-     width: 12%;
+     
      padding: 2px;
+     padding-left: 10px;
+     padding-right: 10px;
      margin: 20px;
-     color: #f87878;
      border-radius: 20px;
      font-size: 17px;
-     border: 1px double  #f87878;
-     background-color: white;
+     background-color:  #f87878;
+     color:rgb(255,210,126);
+     border: 2px solid  rgb(255,210,126);
+    
      
   }
 
   .btn-toggle:hover {
     transform: scale(1.080);
     box-shadow: 0 0 5px 1px #f87878;
-    overflow: hidden;
-    transition: 1s;
+   
 }
   @media screen and (max-width:768px)
   {
@@ -292,3 +301,7 @@ body
 
 
 
+.bg 
+{
+  background-color: white;
+}
