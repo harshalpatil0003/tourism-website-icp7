@@ -12,6 +12,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <!-- <link rel="stylesheet" href="./../css/index.css">-->
           <link rel="stylesheet" href="./../css/style.css">
+        
 </head>
 <body>
 
@@ -64,7 +65,7 @@
     </div>
 </nav>
 
-    <div class="card">
+    <div class="r-card">
        <h1>Review Page</h1>
        <p>Please rate our service by clicking on the stars below:</p>
        <div id="rating" class="stars-container">
@@ -173,6 +174,13 @@
 
 
 
+
+
+
+
+
+
+
       <!--script tag-->
       <script>
         const stars = document.querySelectorAll('.stars');
@@ -206,7 +214,7 @@
       
         function showPopup() {
           const review = description.value;
-          const message = `Thank you for your review!\n\nRating: ${userRating}`; /*stars\nReview: ${review}`;*/
+          const message = `Thank you for your review!\n\nRating: ${userRating} stars\nReview: ${review}`;
           alert(message);
           resetForm();
         }
