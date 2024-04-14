@@ -20,7 +20,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .form-container {
   position: relative;
   display: flex;
@@ -149,16 +148,16 @@ body {
   margin-top: 40px;
 }
 .forms .form-content .button input {
-  color: #fff;
-  font-size: large;
-  background: #232526;
-  border-radius: 10px;
-  text-align: center;
-  height: 50px;
-  /* max-width: 50%; */
-  margin: 0px 25%;
-  cursor: pointer;
-  transition: all 0.4s ease;
+  padding: 3px;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 17px;
+     margin: 20px;
+     color:rgb(255,210,126);
+     background-color: #f87878;
+     border: 2px solid  rgb(255,210,126);
+     border-radius: 20px;
+    
 }
 .forms .form-content .button input:hover {
   background: #777;
