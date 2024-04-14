@@ -70,8 +70,16 @@ img {
     padding: 10px 0;
     padding-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px 1px #f87878;
+    /* box-shadow: 0 0 5px 1px #f87878; */
     margin-bottom: 20px;
+}
+
+.search-bar:hover{
+    transform: scale(1);
+     border: 1px double #f87878; 
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 0.2s;
 }
 
 /* Custom styles for form elements */
@@ -80,13 +88,17 @@ img {
 .search-bar input[type="number"] {
     border-radius: 30px; 
     padding: 10px 20px; 
+    border: 1px double #f87878;
+    
 }
+
 
 .search-bar input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
 .search-bar .btn {
+
     border-radius: 30px;
     padding: 10px 30px;
 }
@@ -109,17 +121,19 @@ img {
     margin-bottom: 20px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+.btn-primary { 
+    background-color: #f87878;
+
     border-radius: 30px;
     padding: 10px 30px;
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #f87878;;
+    transform: scale(1.05);
+  overflow: hidden;
+  transition: 0.1s;
 }
 
 .card-img-top {
@@ -138,9 +152,64 @@ img {
     margin-bottom: 20px;
     border-radius: 20px;
 }
+.card-accommodation:hover{
+    transform: scale(1);
+    border: 1px double #000000d4;
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+ /* Featured Dining Cards  */
+
+ .featured-dining{
+    padding: 30px 0;
+ }
+
+.card-dining{
+
+    height: 550px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.card-dining:hover{
+    transform: scale(1);
+    border: 1px double #000000d4;
+    box-shadow: 0 0 5px 1px #f87878;
+    overflow: hidden;
+    transition: 0.2s;
+}
 
 
+/* Custom CSS for Search Filters section */
+.search-filters {
+    padding: 50px 0;
+}
 
+.search-filters h2 {
+    margin-bottom: 30px;
+}
+
+.search-filters form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-filters label {
+    font-weight: bold;
+}
+
+.search-filters select {
+    border: 1px solid #ced4da;
+}
+
+.search-filters button {
+    margin-top: 20px;
+}
+
+/* footer */
 .card-footer-card{
     background-color: black;
     width: 100%;
@@ -179,4 +248,4 @@ h4 {
 .copyright{
     color: #fff;
 }
-
+/* footer end */
