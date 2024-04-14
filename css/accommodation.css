@@ -23,6 +23,11 @@ img {
     height: 500px;
 }
 
+.moving-img{
+    border-radius: 10px;
+    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.9);
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
@@ -63,6 +68,10 @@ img {
  .search-bar {
     background-color: #f8f9fa;
     padding: 10px 0;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #f87878;
+    margin-bottom: 20px;
 }
 
 /* Custom styles for form elements */
@@ -114,11 +123,60 @@ img {
 }
 
 .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    height: 300px;
+    border-radius: 20px;
 }
 
 .card-body {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+} 
+
+.card-accommodation{
+
+    height: 550px;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
+
+
+
+.card-footer-card{
+    background-color: black;
+    width: 100%;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.flex-column a:hover {
+    margin-left: -10px;
+    transition: 1s;
+}
+
+h4 {
+    color: orange;
+}
+
+@media screen and (max-width: 768px) {
+    .foo {
+        text-align: center;
+    }
+}
+
+.fa-brands {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.fa-brands:hover {
+    transform: scale(1.085);
+    transition: 1s
+}
+.copyright{
+    color: #fff;
+}
+

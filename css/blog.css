@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;500&display=swap');
+
 body
 {
    
@@ -72,14 +75,13 @@ body
     transition: 1s;
 }
 
-.cards
+.card
 {
   border-radius: 10px;
-  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.9);
   background-color: white;
 }
 
-.cards:hover{
+.card:hover{
     transform: scale(1.002);
     box-shadow: 0  0 5px 1px #f87878;
     overflow: hidden;
@@ -92,7 +94,7 @@ body
   padding: 2px;
   padding-left:10px;
   padding-right: 10px;
-  font-size: 16px;
+  font-size: 17px;
   color:rgb(255,210,126);
   background-color: #f87878;
   border: 2px solid  rgb(255,210,126);
@@ -159,7 +161,7 @@ body
   {
     text-align: center;
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 17px;
   }
   @media screen and (max-width:768px)
   {
@@ -179,10 +181,11 @@ body
     margin:10px auto;
     border-radius: 10px;
     box-shadow: 0  0 5px 1px #f87878;
+    background-color: white;
   }
   .container:hover
   {
-    box-shadow: 0  0 5px 1px #f87878;
+    box-shadow: 0  0 5px 2px #f87878;
   }
   @media screen and (max-width:768px)
   {
@@ -194,6 +197,7 @@ body
    display: block;
    margin: 0 auto;
    padding: 20px;
+   background-color: white;
   }
 }
   .container-img
@@ -225,6 +229,7 @@ body
       font-size: 20px;
       font-style: normal;
       padding: 10px;
+     
   }
   @media screen and (max-width:768px)
   {
@@ -242,7 +247,7 @@ body
   {
       display: flex;
       justify-content: center;
-      margin-top: 40px;
+     
   }
     @media screen and (max-width:768px)
     {
@@ -262,16 +267,15 @@ body
  
   .btn-toggle
   {
-     
-     padding: 2px;
-     padding-left: 10px;
-     padding-right: 10px;
+    padding: 3px;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 17px;
      margin: 20px;
-     border-radius: 20px;
-     font-size: 17px;
-     background-color:  #f87878;
      color:rgb(255,210,126);
+     background-color: #f87878;
      border: 2px solid  rgb(255,210,126);
+     border-radius: 20px;
     
      
   }
@@ -299,9 +303,3 @@ body
   padding-bottom: 2px;
 }
 
-
-
-.bg 
-{
-  background-color: white;
-}
